@@ -11,7 +11,7 @@ HW and FW of a TinyGS 2.4 GHz LoRa ground station https://tinygs.com/
 * [ ] RIOTOS firmware for ESP32 Vroom + Lambda80 module (cubesat emulator)
 
 
-##PCB for ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C)
+## PCB for ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C)
 This PCB is designed to support a ESP32 devkit board and 2 MiKroBus modules.
 
 The purpose of this board is to control mikrobus modules including SX1280 technology that will transmit and receive messages on a 2.4GHz radio frequency. Each module are connected to a ESP32 which will be connected to the wifi.
@@ -40,5 +40,5 @@ Connector grove available on board :
 
 	
 
-Two UFL connected to a SMA mount edge connector are available to plug an antenna. They’re disconnected from the rest of the board, which allows to connect the module that you want to the antenna, with a UFL -UFL connector.
+Two UFL connected to a SMA mount edge connector are available to plug an antenna. Theyâ€™re disconnected from the rest of the board, which allows to connect the module that you want to the antenna, with a UFL -UFL connector.
 
