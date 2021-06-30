@@ -38,7 +38,7 @@ Connector grove available on board :
 	SDA   IO21				CLK	IO14
 	SCL   IO22				MISO	IO12
 
-	
+
 
 Two UFL connected to a SMA mount edge connector are available to plug an antenna. They’re disconnected from the rest of the board, which allows to connect the module that you want to the antenna, with a UFL -UFL connector.
 

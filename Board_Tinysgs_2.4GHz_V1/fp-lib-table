@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name Conn_2x19)(type KiCad)(uri "${KIPRJMOD}/Lib & empreinte/Conn_2x19")(options "")(descr ""))
+  (lib (name ESP32-DEVKITC-32D)(type KiCad)(uri "${KIPRJMOD}/Lib & empreinte/ESP32-DEVKITC-32D")(options "")(descr ""))
+  (lib (name Grove)(type KiCad)(uri "${KIPRJMOD}/Lib & empreinte/Grove")(options "")(descr ""))
+  (lib (name Logos-image)(type KiCad)(uri "${KIPRJMOD}/Lib & empreinte/Logos-image.pretty")(options "")(descr ""))
+  (lib (name MiKroBus_MIKROE-2439)(type KiCad)(uri "${KIPRJMOD}/Lib & empreinte/MiKroBus_MIKROE-2439")(options "")(descr ""))
+  (lib (name SMA-J-P-H-ST-EM1)(type KiCad)(uri "${KIPRJMOD}/Lib & empreinte/SMA-J-P-H-ST-EM1")(options "")(descr ""))
+  (lib (name U)(type KiCad)(uri "${KIPRJMOD}/Lib & empreinte/U.FL-R-SMT_01_")(options "")(descr ""))
+)
