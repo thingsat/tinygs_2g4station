@@ -17,6 +17,7 @@ This PCB is designed to support a ESP32 devkit board and 2 MiKroBus modules.
 The purpose of this board is to control mikrobus modules including SX1280 technology that will transmit and receive messages on a 2.4GHz radio frequency. Each module are connected to a ESP32 which will be connected to the wifi.
 
 Mikrobus board is an add-on board socket standard made by [mikroe](https://www.mikroe.com/mikrobus)
+ ![MiKroBus module](https://github.com/thingsat/tinygs_2g4station/blob/main/MiKroBus_module%20-%20Pinout_specification.PNG) 
 
 Both Mikrobus boards are connected to the ESP 32 by SPI:
 
