@@ -1,5 +1,11 @@
 # TinyGS :: 2.4 GHz LoRa ground station
-HW and FW of a TinyGS 2.4 GHz LoRa ground station https://tinygs.com/
+
+Project to develop a ground station board that will receive messages from satellite on the 2.4GHz band. Satellite tracks are [Thingsat@STORK1](https://tinygs.com/satellite/ThingSat) and other cubeseat followed by the TinyGS community.
+This Git contains Hardware and software of a TinyGS 2.4 GHz LoRa ground station https://tinygs.com/.
+
+For the long-range communication, we will use the Semtech SX1280, which is a low power 2.4 GHz Wireless RF Transceiver. We will use this technology through modules [E28](https://www.amazon.com/Ebyte-%C3%89metteur-r%C3%A9cepteur-Bluetooth-E28-2G4M12S-%C3%A9metteur/dp/B07P2BZW5C) and [Lamda80](https://fr.farnell.com/rf-solutions/lambda80-24s/transceiver-2mbps-2-5ghz/dp/2988571).
+
+Project contains several PCB and firmware. 
 
 
 ## Todolist
@@ -11,35 +17,18 @@ HW and FW of a TinyGS 2.4 GHz LoRa ground station https://tinygs.com/
 * [ ] RIOTOS firmware for ESP32 Vroom + Lambda80 module (cubesat emulator)
 
 
-## PCB for ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C)
-This PCB is designed to support a ESP32 devkit board and 2 MiKroBus modules.
 
-The purpose of this board is to control mikrobus modules including SX1280 technology that will transmit and receive messages on a 2.4GHz radio frequency. Each module are connected to a ESP32 which will be connected to the wifi.
+###  About hardware
+PCB are made to integrate 2 microbus modules including SX1280 technology. Mikrobus board is an add-on board socket standard made by [mikroe](https://www.mikroe.com/mikrobus). This makes the ground station adjustable and modular.
+![MiKroBus module](https://github.com/thingsat/tinygs_2g4station/blob/main/MiKroBus_module%20-%20Pinout_specification.PNG) 
 
-Mikrobus board is an add-on board socket standard made by [mikroe](https://www.mikroe.com/mikrobus)
- ![MiKroBus module](https://github.com/thingsat/tinygs_2g4station/blob/main/MiKroBus_module%20-%20Pinout_specification.PNG) 
+There are 2 different PCB version:
+* Board_Tinysgs_2.4GHz_V1, which contains: ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C)
+* Board_Tinysgs_2.4GHz_V2, which contains: ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C) + H-Bridges for driving stepper + Power supply
 
-Both Mikrobus boards are connected to the ESP 32 by SPI:
+Both Mikrobus boards are connected to the ESP 32 by SPI.
 
-
-	MiKroBus 1: SPI_0			MiKroBus 2 :SPI_1
-	CLK     IO18				CLK	IO14
-	MISO	IO19				MISO	IO12
-	MOSI  	IO23				MOSI  	IO13
-	NSS     IO5				NSS     IO15
-	
+Powersupply is a [Power Bank Battery shield](https://www.amazon.com/Diymore-Lithium-Battery-Charging-Arduino/dp/B07SZKNST4) made for Arduino and ESP32 that will be plug under the board.
 
 
-Mikrobus 1 is also connected to the ESP32 by a RESET (IO27) and a BUSY(IO27) line.
-
-Connector grove available on board :
-
-
-	I2C:					UART serial link (Rx/Tx):
-	SDA   IO21				CLK	IO14
-	SCL   IO22				MISO	IO12
-
-
-
-Two UFL connected to a SMA mount edge connector are available to plug an antenna. They’re disconnected from the rest of the board, which allows to connect the module that you want to the antenna, with a UFL -UFL connector.
-
+###  About software:
