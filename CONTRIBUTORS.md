@@ -1,0 +1,3 @@
+# Contributors
+
+* Samuel Barnola
