@@ -1,4 +1,4 @@
-# Board_Tinysgs_2.4GHz_V1
+# Board_Tinysgs_2.4GHz
 
 This board is the firts version of the 2.4GHz gateway
 Contain Schematic and PCB file for ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C).
@@ -9,29 +9,40 @@ The purpose of this board is to control mikrobus modules including SX1280 techno
 
 Mikrobus board is an add-on board socket standard made by [mikroe](https://www.mikroe.com/mikrobus)
 
-Both Mikrobus boards are connected to the ESP 32 by SPI:
+Both Mikrobus boards are connected to ESP 32 by SPI, UART Rx/Tx and by a Reset + Busy line :
 
 
-	MiKroBus 1: SPI_0			MiKroBus 2 : SPI_1
-	CLK     IO18				CLK	IO14
-	MISO	IO19				MISO	IO12
-	MOSI  	IO23				MOSI  	IO13
-	NSS     IO5				NSS     IO15
+	MiKroBus 1: 				MiKroBus 2 : 
 	
+	SPI_0					SPI_1
+	CLK 	IO18				CLK	IO14
+	MISO	IO19				MISO	IO12
+	MOSI	IO23				MOSI	IO13
+	NSS 	IO5				NSS	IO15
+	
+	UART_0					UART_2
+	Tx	IO23				Tx	IO30
+	Rx	IO24				Rx	IO31
+	
+	RESET_0 IO27				RESET_1	IO34
+	BUSY_0	IO25				BUSY_1	IO35
 
 
-Mikrobus 1 is also connected to the ESP32 by a RESET (IO27) and a BUSY(IO25) line.
 
 Connector grove available on board :
 
 
-	I2C:					UART serial link (Rx/Tx):
-	SDA   IO21				CLK	IO14
-	SCL   IO22				MISO	IO12
+	I2C:			UART_2(Rx/Tx):		GPIO:
+	SDA   IO21		Tx	IO30		IO32
+	SCL   IO22		Rx	IO31		IO33
 
 
+UART_2 can be connected to module MiKroBus 2 or to grove connector. A jumper need to be plug to choose beetween grove output or the mikrobus module.
 
-Two UFL connected to a SMA mount edge connector are available to plug an antenna. They’re disconnected from the rest of the board, which allows to connect the module that you want to the antenna, with a SMA -UFL connector.
+
+Two UFL connected to a SMA mount edge connector are available to plug an antenna. They are disconnected from the rest of the board, which allows to connect the module that you want to the antenna, with a SMA -UFL connector.
+
+A powerbank can be plug under the board to supply the 3V. The [powerbank](https://www.amazon.com/Diymore-Lithium-Battery-Charging-Arduino/dp/B07SZKNST4) is design for ESP32 and is purchasable on amazon. 
 
 
 
