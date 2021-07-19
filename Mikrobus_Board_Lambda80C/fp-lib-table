@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name LIB_LAMBDA80C-24-Traversant)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/LIB_LAMBDA80C-24-Traversant.pretty")(options "")(descr ""))
+  (lib (name MIKROE-924)(type Legacy)(uri "${KIPRJMOD}/Lib & Fp/LIB_MIKROE-924/MIKROE-924/KiCad/MIKROE-924.mod")(options "")(descr ""))
+  (lib (name Logos-image)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/Logos-image.pretty")(options "")(descr ""))
+  (lib (name LAMBDA80C-24S)(type Legacy)(uri "${KIPRJMOD}/Lib & Fp/LIB_LAMBDA80C-24S/LAMBDA80C-24S/KiCad/LAMBDA80C-24S.mod")(options "")(descr ""))
+)

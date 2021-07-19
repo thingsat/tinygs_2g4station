@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "LAMBDA80C-24S"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-10-23-17:02:07)
+    (mountForm default
+        (footprintRef "LAMBDA80C24S")
+        (spec "System")
+    )
+)

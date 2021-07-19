@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MIKROE-924"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-10-10-15:05:25)
+    (mountForm default
+        (footprintRef "MIKROE924")
+        (spec "System")
+    )
+)

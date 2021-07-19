@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "LAMBDA80C24S"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "LAMBDA80C24S")
+        (spec "default")
+    )
+)

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MIKROE_924'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "MIKROELEKTRONIKA", "MIKROE-924" (!) = "", "MIKROE924", "Other", "932-MIKROE-924", "https://www.mouser.com/Search/Refine.aspx?Keyword=932-MIKROE-924", "", "", "microSD click mikroBUS", "https://www.mikroe.com/microsd-click", "5 mm"
+END_PART
+
+END.

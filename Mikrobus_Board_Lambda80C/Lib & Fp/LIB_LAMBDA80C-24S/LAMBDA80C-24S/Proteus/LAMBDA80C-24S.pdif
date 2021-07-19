@@ -1,0 +1,198 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "LAMBDA80C-24S"
+   (description "RF Transceiver FSK 3.3V 16-Pin SMD Module")
+   (family "ANA")
+   (package "LAMBDA80C24S")
+   (attribute "Datasheet Link" "https://www.arrow.com/en/products/lambda80c-24s/rf-solutions")
+   (attribute "Geometry.Height" "2mm")
+   (attribute "Manufacturer_Name" "RF SOLUTIONS")
+   (attribute "Manufacturer_Part_Number" "LAMBDA80C-24S")
+   (attribute "Mouser Part Number" "223-LAMBDA80C-24S")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/RF-Solutions/LAMBDA80C-24S?qs=17u8i%2FzlE89dhjIrlJ9FHg%3D%3D")
+   (attribute "Arrow Part Number" "LAMBDA80C-24S")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/lambda80c-24s/rf-solutions")
+   (gate
+    (symbol "LAMBDA80C-24S")
+    (pin "ANT_/_N/C" 1 PS)
+    (pin "GND" 2 PS)
+    (pin "VCC" 3 PS)
+    (pin "N/C_1" 4 PS)
+    (pin "N/C_2" 5 PS)
+    (pin "BUSY" 6 PS)
+    (pin "DIO1" 7 PS)
+    (pin "DIO2" 8 PS)
+    (pin "DIO3" 9 PS)
+    (pin "N/C_3" 10 PS)
+    (pin "N/C_4" 11 PS)
+    (pin "RESET" 12 PS)
+    (pin "SCLK" 13 PS)
+    (pin "SDO" 14 PS)
+    (pin "SDI" 15 PS)
+    (pin "NSEL" 16 PS)
+   )
+  )
+  (symbol "LAMBDA80C-24S"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1200 100) (pt 1200 -800) (pt 200 -800) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -700) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -700) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -600) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -500) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -400) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1400 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "LAMBDA80C24S"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -9.975 13.485)
+      (pt 9.975 13.485)
+      (pt 9.975 -13.485)
+      (pt -9.975 -13.485)
+      (pt -9.975 13.485))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -12.2 14.485)
+      (pt 10.975 14.485)
+      (pt 10.975 -14.485)
+      (pt -12.2 -14.485)
+      (pt -12.2 14.485))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -9.975 -12)
+      (pt -9.975 -13.485)
+      (pt 9.975 -13.485)
+      (pt 9.975 -12))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -9.975 9)
+      (pt -9.975 13.485)
+      (pt 9.975 13.485)
+      (pt 9.975 9))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -11 7.135)
+      (arc (pt -11.000 7.135) (pt -11.200 7.035) (pt -11.000 7.235) (start 180.0) (sweep .0))
+      (pt -11.2 7.135)
+      (arc (pt -11.200 7.135) (pt -11.200 7.035) (pt -11.000 7.235) (start 180.0) (sweep 180.0))
+      (pt -11 7.135))))
+   (leg 1 (pt -8.725 7.135) (padstack 0))
+   (leg 2 (pt -8.725 4.595) (padstack 0))
+   (leg 3 (pt -8.725 2.055) (padstack 0))
+   (leg 4 (pt -8.725 -0.485) (padstack 0))
+   (leg 5 (pt -8.725 -3.025) (padstack 0))
+   (leg 6 (pt -8.725 -5.565) (padstack 0))
+   (leg 7 (pt -8.725 -8.105) (padstack 0))
+   (leg 8 (pt -8.725 -10.645) (padstack 0))
+   (leg 9 (pt 8.725 -10.645) (padstack 0))
+   (leg 10 (pt 8.725 -8.105) (padstack 0))
+   (leg 11 (pt 8.725 -5.565) (padstack 0))
+   (leg 12 (pt 8.725 -3.025) (padstack 0))
+   (leg 13 (pt 8.725 -0.485) (padstack 0))
+   (leg 14 (pt 8.725 2.055) (padstack 0))
+   (leg 15 (pt 8.725 4.595) (padstack 0))
+   (leg 16 (pt 8.725 7.135) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.780 2.500 0 0 0.000))
+   )
+   (model "LAMBDA80C-24S.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

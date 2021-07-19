@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LAMBDA80C-24S
+D RF Transceiver FSK 3.3V 16-Pin SMD Module
+K
+F https://www.arrow.com/en/products/lambda80c-24s/rf-solutions
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model LAMBDA80C-24S
+#/1614136/450676/2.49/16/4/Integrated Circuit
+DEF LAMBDA80C-24S IC 0 30 Y Y 1 F N
+F0 "IC" 1250 300 50 H V L CNN
+F1 "LAMBDA80C-24S" 1250 200 50 H V L CNN
+F2 "LAMBDA80C24S" 1250 100 50 H I L CNN
+F3 "https://www.arrow.com/en/products/lambda80c-24s/rf-solutions" 1250 0 50 H I L CNN
+F4 "RF Transceiver FSK 3.3V 16-Pin SMD Module" 1250 -100 50 H I L CNN "Description"
+F5 "2" 1250 -200 50 H I L CNN "Height"
+F6 "RF SOLUTIONS" 1250 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LAMBDA80C-24S" 1250 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "223-LAMBDA80C-24S" 1250 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/RF-Solutions/LAMBDA80C-24S?qs=17u8i%2FzlE89dhjIrlJ9FHg%3D%3D" 1250 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "LAMBDA80C-24S" 1250 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/lambda80c-24s/rf-solutions" 1250 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X ANT_/_N/C 1 0 0 200 R 50 50 0 0 P
+X GND 2 0 -100 200 R 50 50 0 0 P
+X VCC 3 0 -200 200 R 50 50 0 0 P
+X N/C_1 4 0 -300 200 R 50 50 0 0 P
+X N/C_2 5 0 -400 200 R 50 50 0 0 P
+X BUSY 6 0 -500 200 R 50 50 0 0 P
+X DIO1 7 0 -600 200 R 50 50 0 0 P
+X DIO2 8 0 -700 200 R 50 50 0 0 P
+X DIO3 9 1400 -700 200 L 50 50 0 0 P
+X N/C_3 10 1400 -600 200 L 50 50 0 0 P
+X N/C_4 11 1400 -500 200 L 50 50 0 0 P
+X RESET 12 1400 -400 200 L 50 50 0 0 P
+X SCLK 13 1400 -300 200 L 50 50 0 0 P
+X SDO 14 1400 -200 200 L 50 50 0 0 P
+X SDI 15 1400 -100 200 L 50 50 0 0 P
+X NSEL 16 1400 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1200 100 1200 -800 200 -800 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

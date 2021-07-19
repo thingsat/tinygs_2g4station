@@ -1,0 +1,18 @@
+.LAMBDA80C-24S :1 ;RF Transceiver FSK 3.3V 16-Pin SMD Module
+LAMBDA80C24S
+*STM IC
+*NGS
+*PLB 1="ANT / N/C" 2="GND" 3="VCC" 4="N/C_1" 5="N/C_2" 6="BUSY" 7="DIO1" 8="DIO2" 9="DIO3" 10="N/C_3" 11="N/C_4" 12="RESET" 13="SCLK" 14="SDO" 15="SDI" 16="NSEL"
+*MXP 16
+*DFN LAMBDA80C-24S
+~!Manufacturer_Name (RF SOLUTIONS)
+~!Manufacturer_Part_Number (LAMBDA80C-24S)
+~!Mouser Part Number (223-LAMBDA80C-24S)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/RF-Solutions/LAMBDA80C-24S?qs=17u8i%2FzlE89dhjIrlJ9FHg%3D%3D)
+~!Arrow Part Number (LAMBDA80C-24S)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/lambda80c-24s/rf-solutions)
+~!Link Datasheet (https://www.arrow.com/en/products/lambda80c-24s/rf-solutions)
+~!Height (2mm)
+~!3D_Model (LAMBDA80C-24S)
+LAMBDA80C-24S
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 
