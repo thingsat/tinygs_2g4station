@@ -1,0 +1,17 @@
+.MIKROE-924 :1 ;microSD click mikroBUS
+MIKROE924
+*STM IC
+*NGS
+*PLB 1="AN" 2="RST" 3="CS" 4="SCK" 5="MISO" 6="MOSI" 7="+3.3V" 8="GND_1" 9="PWM" 10="INT" 11="RX" 12="TX" 13="SCL" 14="SDA" 15="+5V" 16="GND_2"
+*MXP 16
+*DFN MIKROE-924
+~!Manufacturer_Name (MIKROELEKTRONIKA)
+~!Manufacturer_Part_Number (MIKROE-924)
+~!Mouser Part Number (932-MIKROE-924)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=932-MIKROE-924)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://www.mikroe.com/microsd-click)
+~!Height (5mm)
+MIKROE-924
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 

@@ -102,4 +102,4 @@ Lib & empreinte folder contains all necessary symbol and footprint for the proje
 ### Rendered
 
 ![Printing_feedback_top](https://github.com/thingsat/tinygs_2g4station/blob/main/Board_Tinysgs_2.4GHz_V1/Picture/Printing_feedback_top.PNG) 
-![Printing_feedback_bellow](https://github.com/thingsat/tinygs_2g4station/blob/main/Board_Tinysgs_2.4GHz_V1/Picture/Printing_feedback_bellow.PNG) 
+![Printing_feedback_bellow](https://github.com/thingsat/tinygs_2g4station/blob/main/Board_Tinysgs_2.4GHz_V1/Picture/Printing_feedback_bottom.PNG) 

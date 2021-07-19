@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "MIKROE924"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "MIKROE924")
+        (spec "default")
+    )
+)

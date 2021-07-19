@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Lib_E28-2G4M12-20S)(type Legacy)(uri "${KIPRJMOD}/Lib & Fp/LIB_E28-2G4M12-20S/Lib_E28-2G4M12-20S.lib")(options "")(descr ""))
+  (lib (name MIKROE-924)(type Legacy)(uri "${KIPRJMOD}/Lib & Fp/LIB_MIKROE-924/MIKROE-924/KiCad/MIKROE-924.lib")(options "")(descr ""))
+)
