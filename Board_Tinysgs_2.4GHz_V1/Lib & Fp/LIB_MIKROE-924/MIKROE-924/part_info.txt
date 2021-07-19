@@ -1,0 +1,9 @@
+Manufacturer=MIKROELEKTRONIKA
+PartNumber=MIKROE-924
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=16
+Version=1.2
+Released=2018-10-10 15:05:25
+Downloaded=2021-06-17 16:12:49
+3D=N

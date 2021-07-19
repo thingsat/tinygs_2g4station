@@ -1,9 +1,10 @@
 (fp_lib_table
   (lib (name Conn_2x19)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/Conn_2x19")(options "")(descr ""))
   (lib (name ESP32-DEVKITC-32D)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/ESP32-DEVKITC-32D")(options "")(descr ""))
-  (lib (name Grove)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/Grove")(options "")(descr ""))
+  (lib (name LIB_E28-2G4M12-20S)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/LIB_E28-2G4M12-20S")(options "")(descr ""))
+  (lib (name LIB_grove)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/LIB_grove")(options "")(descr ""))
+  (lib (name LIB_MIKROE-924)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/LIB_MIKROE-924")(options "")(descr ""))
   (lib (name Logos-image)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/Logos-image.pretty")(options "")(descr ""))
-  (lib (name MiKroBus_MIKROE-2439)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/MiKroBus_MIKROE-2439")(options "")(descr ""))
   (lib (name SMA-J-P-H-ST-EM1)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/SMA-J-P-H-ST-EM1")(options "")(descr ""))
   (lib (name U)(type KiCad)(uri "${KIPRJMOD}/Lib & Fp/U.FL-R-SMT_01_")(options "")(descr ""))
 )
