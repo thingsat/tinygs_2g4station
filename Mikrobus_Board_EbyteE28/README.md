@@ -18,7 +18,7 @@ Here the connection between the Mikrobus standard pin and the E28 module pin
 	
 	for M20S
 	Rx	<->	TX_EN
-	Tx	<->RX_EN
+	Tx	<->	RX_EN
 
 Ebyte E28 is supplied with 3.3V, by the +3.3V Mikrobus pin.
 
