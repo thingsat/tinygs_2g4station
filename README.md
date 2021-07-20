@@ -26,9 +26,13 @@ There are 2 different PCB version:
 * Board_Tinysgs_2.4GHz_V1, which contains: ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C)
 * Board_Tinysgs_2.4GHz_V2, which contains: ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C) + H-Bridges for driving stepper + Power supply
 
-Both Mikrobus boards are connected to the ESP 32 by SPI.
+We made the board as modular as possible. It is possible to implement all modules as desired, as long as it respects the Mikrobus pin specification. Mikrobus module are connected by SPI, I2C, UART and more GPIO. They are both supplied by 3V and Mikrobus_1 is also supplied by 5V if desired. 2 SMA connector mount edge are available on board. Theyre a connected to a SMA male connector, which allows to plug any signal that we want through a SMA female connector.
 
-Powersupply is a [Power Bank Battery shield](https://www.amazon.com/Diymore-Lithium-Battery-Charging-Arduino/dp/B07SZKNST4) made for Arduino and ESP32 that will be plug under the board.
+Both Mikrobus boards are connected to the ESP 32 by SPI. They are using the same SPI bus (SPI_0).
 
+
+Powersupply is can be provide by [Power Bank Battery shield](https://www.amazon.com/Diymore-Lithium-Battery-Charging-Arduino/dp/B07SZKNST4) made for Arduino and ESP32 that will be plug under the board.
+
+PCB are made on KiCad, which is a free software for electronics circuit board design. 
 
 ###  About software:
