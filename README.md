@@ -35,5 +35,10 @@ A [Power Bank NCR18650B Battery shield](https://www.amazon.com/Diymore-Lithium-B
 
 PCB are made on KiCad, which is a free software for electronics circuit board design. 
 
-###  About software:
+###  About software
+
+
+### Media
+![TinyGS 2G4](./images/gateway_tinygs_2g4-a.jpg)
+![TinyGS 2G4](./images/gateway_tinygs_2g4-b.jpg)
 
