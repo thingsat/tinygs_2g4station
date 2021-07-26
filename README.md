@@ -39,6 +39,10 @@ PCB are made on KiCad, which is a free software for electronics circuit board de
 
 
 ### Media
+Here the picture of the board_V1, with or without modules. On last picture, a GPS, a magnetometer and a joystick are connected by grove connection.
+
 ![TinyGS 2G4](./images/gateway_tinygs_2g4-a.jpg)
-![TinyGS 2G4](./images/gateway_tinygs_2g4-b.jpg)
+![TinyGS 2G4](./images/gateway_tinygs_2g4-c.jpg)
+![TinyGS 2G4](./images/gateway_tinygs_2g4-d-all_components.jpg)
+
 
