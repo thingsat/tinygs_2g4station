@@ -1,5 +1,5 @@
-#Grove - GPS
+# Grove GPS
 
-more comming
+Coming soon
 
 https://wiki.seeedstudio.com/Grove-GPS/
