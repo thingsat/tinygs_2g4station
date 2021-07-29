@@ -1,3 +1,3 @@
-#SX128x
+# SX128x module on Mikrobus adapter
 
-Comming
+Coming soon
