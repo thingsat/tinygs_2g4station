@@ -8,16 +8,16 @@ For the long-range communication, we will use the Semtech SX1280, which is a low
 Project contains several PCBs and firmwares. 
 
 ## Todolist
-* [x] PCB for ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C)
-* [ ] PCB for ESP32 Vroom + 2 Mikrobus modules + 2 groves connectors (RXTX,I2C) + H-Bridges for driving stepper + Power supply
+* [x] PCB for ESP32 Vroom + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
+* [ ] PCB for ESP32 Vroom + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
+* [x] Mikrobus adapter for EByte E28 SX1280 module
+* [x] Mikrobus adapter for Lambda80 SX1280 module 
+* [ ] Mikrobus adapter for [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en) 
 * [ ] TinyGS firmware for ESP32 Vroom + E28 module
 * [ ] TinyGS firmware for ESP32 Vroom + Lambda80 module
+* [ ] TinyGS firmware for ESP32 Vroom + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
 * [ ] Power consumption study with [X-NUCLEO-LPM01A](https://www.st.com/en/evaluation-tools/x-nucleo-lpm01a.html)
 * [ ] RIOTOS firmware for ESP32 Vroom + Lambda80 module (cubesat emulator)
-
-Contains also:
-* PCB for E28 tranceiver module adapted to mikrobus pin standard
-* PCB for lambdda80 tranceiver module adapted to mikrobus pin standard
 
 ###  About hardware
 PCB are made to integrate up to 2 Mikrobus modules including SX1280 technology. Mikrobus board is an add-on board socket standard made by [mikroe](https://www.mikroe.com/mikrobus). This makes the ground station adjustable and modular.
@@ -33,7 +33,7 @@ Both Mikrobus boards are connected to the ESP 32 by SPI. They are using the same
 
 A [Power Bank NCR18650B Battery shield](https://www.amazon.com/Diymore-Lithium-Battery-Charging-Arduino/dp/B07SZKNST4) made for Arduino and ESP32 can be plugged under the board using the 4 screw holes.
 
-PCB are made on KiCad, which is a free software for electronics circuit board design. 
+PCB are made on KiCad, which is a free software for electronics circuit board design. PCBs has been manufactered by [JLCPCB](https://jlcpcb.com/).
 
 ###  About software
 
