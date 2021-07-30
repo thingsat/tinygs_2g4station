@@ -1,6 +1,5 @@
 
 #include <SoftwareSerial.h>
- #include <HardwareSerial.h>
   
 SoftwareSerial SoftSerial(16, 17);
 unsigned char buffer[64];                   // buffer array for data receive over serial port
