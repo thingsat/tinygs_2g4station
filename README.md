@@ -43,9 +43,9 @@ Firmware are into [./Firmware](./Firmware).
 ### Media
 Here the picture of the board_V1, with or without modules. On last picture, a GPS, a magnetometer and a joystick are connected by grove connection.
 
-![TinyGS 2G4](./images/gateway_tinygs_2g4-a.jpg)
-![TinyGS 2G4](./images/gateway_tinygs_2g4-c.jpg)
 ![TinyGS 2G4](./images/gateway_tinygs_2g4-d-all_components.jpg)
 Mounted PCB with Grove boards ([Grove Thumb Joystick](https://wiki.seeedstudio.com/Grove-Thumb_Joystick/), [Grove  LSM6DS3 Accelerometer Gyroscope](https://wiki.seeedstudio.com/Grove-6-Axis_AccelerometerAndGyroscope/), [Grove GPS](https://wiki.seeedstudio.com/Grove-GPS/)) and Lamdba80 and E28 module.
+![TinyGS 2G4](./images/gateway_tinygs_2g4-a.jpg)
+![TinyGS 2G4](./images/gateway_tinygs_2g4-c.jpg)
 
 
