@@ -7,6 +7,8 @@ For the long-range communication, we will use the Semtech SX1280, which is a low
 
 Project contains several PCBs and firmwares. 
 
+Mounted PCB with Grove boards ([Grove Thumb Joystick](https://wiki.seeedstudio.com/Grove-Thumb_Joystick/), [Grove  LSM6DS3 Accelerometer Gyroscope](https://wiki.seeedstudio.com/Grove-6-Axis_AccelerometerAndGyroscope/), [Grove GPS](https://wiki.seeedstudio.com/Grove-GPS/)) and Lamdba80 and E28 module.
+
 ## Todolist
 * [x] PCB for ESP32 Vroom + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
 * [ ] PCB for ESP32 Vroom + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
