@@ -42,6 +42,8 @@ The design of two Mikrobus adapter for SX1280 modules are provided
 
 The pinouts of [Lambda80 SX1280 module adapter](./Mikrobus_Board_Lambda80C/) and the [EByte E28 SX1280 module adapter](./Mikrobus_Board_EbyteE28/) have some differences.
 
+> Two versions of the E28 module exists: 12S & 20S
+
 ```
 E28 module
 AN  <-> Busy
