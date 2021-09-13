@@ -37,6 +37,25 @@ A [Power Bank NCR18650B Battery shield](https://www.amazon.com/Diymore-Lithium-B
 
 PCB are made on [KiCad](https://www.kicad.org/), which is a free software for electronics circuit board design. PCBs has been manufactered by [JLCPCB](https://jlcpcb.com/).
 
+###  Mikrobus adapters
+The design of two Mikrobus adapter for SX1280 modules are provided
+
+The pinouts of [Lambda80 SX1280 module adapter](./Mikrobus_Board_Lambda80C/) and the [EByte E28 SX1280 module adapter](./Mikrobus_Board_EbyteE28/) have some differences.
+
+```
+E28 module
+AN  <-> Busy
+INT <-> DIO1
+PWM <-> DIO2
+
+Lambda80C module
+AN  <-> DIO1
+INT <-> Busy
+PWM <-> DIO2
+```
+
+![pinouts differences](./images/Pin_E28-Lambda80C.png)
+
 ###  About software
 Firmware are into [./Firmware](./Firmware).
 
