@@ -10,8 +10,8 @@ Project contains several PCBs and firmwares.
 ![TinyGS 2G4](./images/gateway_tinygs_2g4-d-all_components.jpg)
 
 ## Todolist
-* [x] PCB for ESP32 Vroom + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
-* [ ] PCB for ESP32 Vroom + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
+* [x] PCB for ESP32 Vroom 38 pins + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
+* [ ] PCB for ESP32 Vroom 38 pins + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
 * [x] Mikrobus adapter for Lambda80 SX1280 module
 * [x] Mikrobus adapter for EByte E28 SX1280 module
 * [ ] Mikrobus adapter for [SX1280PATR24 module](https://fr.aliexpress.com/item/1005001598235704.html) 
@@ -72,3 +72,6 @@ Mounted PCB with Grove boards ([Grove Thumb Joystick](https://wiki.seeedstudio.c
 ![TinyGS 2G4](./images/gateway_tinygs_2g4-c.jpg)
 
 
+## References
+* [ESP32-DevKitC V4 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html)
+* [Buy @ Mouser](https://www.mouser.fr/ProductDetail/Espressif-Systems/ESP32-DevKitC-32U?qs=%252BEew9%252B0nqrCEVvpkdH%2FG5Q==)
