@@ -7,6 +7,8 @@ For the long-range communication, we will use the Semtech SX1280, which is a low
 
 Project contains several PCBs and firmwares. 
 
+![TinyGS 2G4](./images/gateway_tinygs_2g4-d-all_components.jpg)
+
 ## Todolist
 * [x] PCB for ESP32 Vroom + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
 * [ ] PCB for ESP32 Vroom + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
@@ -41,6 +43,8 @@ PCB are made on [KiCad](https://www.kicad.org/), which is a free software for el
 The design of two Mikrobus adapter for SX1280 modules are provided
 
 The pinouts of [Lambda80 SX1280 module adapter](./Mikrobus_Board_Lambda80C/) and the [EByte E28 SX1280 module adapter](./Mikrobus_Board_EbyteE28/) have some differences.
+
+> Two versions of the E28 module exists: 12S & 20S
 
 ```
 E28 module
