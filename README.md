@@ -22,6 +22,8 @@ Project contains several PCBs and firmwares.
 * [ ] TinyGS firmware for ESP32 Vroom + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
 * [ ] Power consumption study with [X-NUCLEO-LPM01A](https://www.st.com/en/evaluation-tools/x-nucleo-lpm01a.html)
 * [ ] RIOTOS firmware for ESP32 Vroom + Lambda80 module (cubesat emulator)
+* [ ] add LICENSE.txt
+
 
 ###  About hardware
 PCB are made to integrate up to 2 Mikrobus modules including SX1280 technology. Mikrobus board is an add-on board socket standard made by [mikroe](https://www.mikroe.com/mikrobus). This makes the ground station adjustable and modular.
