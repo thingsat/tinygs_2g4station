@@ -75,3 +75,4 @@ Mounted PCB with Grove boards ([Grove Thumb Joystick](https://wiki.seeedstudio.c
 ## References
 * [ESP32-DevKitC V4 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html)
 * [Buy @ Mouser](https://www.mouser.fr/ProductDetail/Espressif-Systems/ESP32-DevKitC-32U?qs=%252BEew9%252B0nqrCEVvpkdH%2FG5Q==)
+* [Build PCBs @ JLCPCB](https://jlcpcb.com/)
