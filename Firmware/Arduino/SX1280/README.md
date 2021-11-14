@@ -26,6 +26,10 @@ Install the lib with `Sketch > Include Lib > Add Zip Lib`
 ...
 ```
 
+### Configure the `SettingsModulation.h` file
+
+By default, the `SettingsModulation.h` file is compatible with the Multitech 2G4 MCard parameters.
+
 ### Transmitter
 
 Open the sketch `TinyGS_2G4_LoRa_Transmitter_Detailed_Setup`
@@ -77,8 +81,6 @@ Build and download on the TinyGS 2G4 station which play the role of receiver.
 
 Open the Arduino console.
 
-Power the transmitter station with an USB cable.
-
 The trace is:
 ```
 20:08:01.874 -> LoRa_Receiver_Detailed_Setup Starting
@@ -108,6 +110,12 @@ The trace is:
 20:08:04.548 -> 
 20:08:04.548 -> 
 20:08:04.548 -> Receiver ready - RXBUFFER_SIZE 32
+```
+
+Power the transmitter station with an USB cable.
+
+The trace is:
+```
 20:08:04.584 -> 
 20:09:03.773 -> 62s  Hello World 1234567890*,CRC,DAAB,RSSI,-81dBm,SNR,6dB,Length,23,Packets,1,Errors,0,IRQreg,8012
 20:09:05.086 -> 63s  Hello World 1234567890*,CRC,DAAB,RSSI,-92dBm,SNR,5dB,Length,23,Packets,2,Errors,0,IRQreg,8012
@@ -119,4 +127,4 @@ The trace is:
 ## TodoList
 * add a frame counter instead of 1234567890
 * Test other examples from https://github.com/StuartsProjects/SX12XX-LoRa/tree/master/examples/SX128x_examples
-* Test SX1280 examples from [RadioLib](https://github.com/jgromes/RadioLib/tree/master/examples/SX128x)
+* Test SX1280 examples from TinyGS [RadioLib](https://github.com/jgromes/RadioLib/tree/master/examples/SX128x)
