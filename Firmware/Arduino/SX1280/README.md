@@ -119,3 +119,4 @@ The trace is:
 ## TodoList
 * add a frame counter instead of 1234567890
 * Test other examples from https://github.com/StuartsProjects/SX12XX-LoRa/tree/master/examples/SX128x_examples
+* Test SX1280 examples from [RadioLib](https://github.com/jgromes/RadioLib/tree/master/examples/SX128x)
