@@ -4,8 +4,8 @@
 
 
 // Update these with values suitable for your network.
-const char* ssid       = "Freebox-588CB4";
-const char* password   = "exutam-nulata&-ditavit-plectunt9";
+const char* ssid       = "MySSID";
+const char* password   = "MYSSID-Password";
 
 const char* mqtt_server = "test.mosquitto.org";
 #define mqtt_port 1883

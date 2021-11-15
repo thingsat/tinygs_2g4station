@@ -1,8 +1,8 @@
-## MQTT	
+# MQTT	
 
 The purpose of this simple example is the test of the MQTT Pub-Sub message exchange from and to the ESP32 Wroom.
 
-### Publish a message from a Linux host
+## Publish a message from a Linux host
 
 ```bash
 nvm use stable
@@ -18,7 +18,7 @@ The serial console of the ESP32 is
 16:29:59.422 -> data:This is a test
 ```
 
-### Publish a message from the ESP32 serial console
+## Publish a message from the ESP32 serial console
 
  : `This is a message from the ESP32 console`
 
@@ -28,3 +28,7 @@ mqtt sub -t '/esp32/9897656/serialdata/tx' -h 'test.mosquitto.org' -v
 ```
 /esp32/9897656/serialdata/tx This is a message from the ESP32 console
 ```
+
+## TodoList
+
+* [ ] Secure the MQTT connection with TLS (ie MQTTS)
