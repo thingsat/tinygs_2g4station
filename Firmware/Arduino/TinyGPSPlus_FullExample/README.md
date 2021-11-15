@@ -15,7 +15,14 @@ This module is connected to the UART2 with the following wiring:
 	Red 	<->	3.3V
 	Black	<->	GRD
 
-The default baudrate for [Grove-GPS](https://wiki.seeedstudio.com/Grove-GPS/) is 4800. Check baudrates for [other GNSS modules](https://github.com/CampusIoT/orbimote/blob/master/gnss_modules.md).
+Warning: The default baudrate for [Grove-GPS](https://wiki.seeedstudio.com/Grove-GPS/) SIM28 is 9600. Check baudrates for [other common GNSS modules](https://github.com/CampusIoT/orbimote/blob/master/gnss_modules.md).
 
-![Grove GPS](Grove_GPS.jpg) 
+> For debugging baudrate, you can display the raw NMEA sentences by setting `DISPLAY_NMEA0183_SENTENCES` to `1` into the sketch.
 
+```c
+...
+#define DISPLAY_NMEA0183_SENTENCES    1
+...
+```
+
+![Grove GPS on the TinyGS 2G4 station](Grove_GPS.jpg) 

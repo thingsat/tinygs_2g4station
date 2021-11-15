@@ -8,7 +8,10 @@
 
 // RXTX for the UART Grove connector
 static const int RXPin = 16, TXPin = 17;
-static const uint32_t GPSBaud = 4800;
+static const uint32_t GPSBaud = 9600;
+
+// set DISPLAY_NMEA0183_SENTENCES to 1 for displaying the NMEA0183 sentences
+#define DISPLAY_NMEA0183_SENTENCES    0
 
 // The TinyGPS++ object
 TinyGPSPlus gps;
@@ -85,8 +88,14 @@ static void smartDelay(unsigned long ms)
   unsigned long start = millis();
   do 
   {
-    while (ss.available())
-      gps.encode(ss.read());
+    while (ss.available()) {
+            char inChar = (char)ss.read();
+#if DISPLAY_NMEA0183_SENTENCES == 1
+            Serial.print(inChar);
+#endif
+            gps.encode(inChar);
+            
+    }
   } while (millis() - start < ms);
 }
 
