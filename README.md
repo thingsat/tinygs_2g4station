@@ -20,20 +20,20 @@ Project contains several PCBs and firmwares.
 ![TinyGS 2G4](./images/gateway_tinygs_2g4-d-all_components.jpg)
 
 ## Todolist
-* [x] PCB for ESP32 Vroom 32 (38 pins) + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
-* [ ] PCB for ESP32 Vroom 32 (38 pins) + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
+* [x] PCB for ESP32 Wroom 32 (38 pins) + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
+* [ ] PCB for ESP32 Wroom 32 (38 pins) + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
 * [x] Mikrobus adapter for Lambda80 SX1280 module
 * [x] Mikrobus adapter for EByte E28 SX1280 module
 * [ ] Mikrobus adapter for [SX1280PATR24 module](https://fr.aliexpress.com/item/1005001598235704.html) 
 * [ ] Mikrobus adapter for [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
 * [ ] Mikrobus adapter for [NiceRF SX1280 module](https://stuartsprojects.github.io/2019/10/07/)2-4ghz-nicerf-sx1280-lora-balloon-tracker-85km-achieved.html)
-* [x] [Arduino sketches](./Firmware/Arduino/SX1280) for ESP32 Vroom 32 + E28 Mikrobus module
-* [x] [Arduino sketches](./Firmware/Arduino/SX1280) for for ESP32 Vroom 32 + Lambda80 Mikrobus module
-* [ ] TinyGS firmware for ESP32 Vroom 32 + E28 Mikrobus module
-* [ ] TinyGS firmware for ESP32 Vroom 32 + Lambda80 Mikrobus module
-* [ ] TinyGS firmware for ESP32 Vroom 32 + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
+* [x] [Arduino sketches](./Firmware/Arduino/SX1280) for ESP32 Wroom 32 + E28 Mikrobus module
+* [x] [Arduino sketches](./Firmware/Arduino/SX1280) for for ESP32 Wroom 32 + Lambda80 Mikrobus module
+* [ ] TinyGS firmware for ESP32 Wroom 32 + E28 Mikrobus module
+* [ ] TinyGS firmware for ESP32 Wroom 32 + Lambda80 Mikrobus module
+* [ ] TinyGS firmware for ESP32 Wroom 32 + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
 * [ ] Power consumption study with [X-NUCLEO-LPM01A](https://www.st.com/en/evaluation-tools/x-nucleo-lpm01a.html)
-* [ ] RIOTOS firmware for ESP32 Vroom 32 + Lambda80 module (cubesat emulator)
+* [ ] RIOTOS firmware for ESP32 Wroom 32 + Lambda80 module (cubesat emulator)
 * [ ] add LICENSE.txt
 
 
@@ -42,8 +42,8 @@ PCB are made to integrate up to 2 Mikrobus modules including SX1280 technology. 
 ![MiKroBus module](https://github.com/thingsat/tinygs_2g4station/blob/main/MiKroBus_module%20-%20Pinout_specification.PNG) 
 
 There are 2 different PCB version:
-* Board_Tinysgs_2.4GHz_V1, which contains: ESP32 Vroom 32 + 2 Mikrobus modules + Grove connectors (RXTX,I2C,ANA)
-* Board_Tinysgs_2.4GHz_V2, which contains: ESP32 Vroom 32 + 2 Mikrobus modules + Grove connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
+* Board_Tinysgs_2.4GHz_V1, which contains: ESP32 Wroom 32 + 2 Mikrobus modules + Grove connectors (RXTX,I2C,ANA)
+* Board_Tinysgs_2.4GHz_V2, which contains: ESP32 Wroom 32 + 2 Mikrobus modules + Grove connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
 
 We made the board as modular as possible. It is possible to implement all modules as desired, as long as it respects the Mikrobus pin specification. Mikrobus module are connected by SPI, I2C, UART and more GPIO. They are both supplied by 3V and Mikrobus_1 is also supplied by 5V if desired. 2 SMA connector mount edge are available on board. Theyre a connected to a SMA male connector, which allows to plug any signal that we want through a SMA female connector.
 
