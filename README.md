@@ -1,9 +1,19 @@
 # TinyGS :: 2.4 GHz LoRa ground station
 
 Project to develop a ground station board that will receive messages from satellite on the 2.4GHz band. Satellite tracks are [Thingsat@STORK1](https://tinygs.com/satellite/ThingSat) and other cubeseat followed by the TinyGS community.
+
 This Git contains Hardware and software of a TinyGS 2.4 GHz LoRa ground station https://tinygs.com/.
 
-For the long-range communication, we will use the Semtech SX1280, which is a low power 2.4 GHz LoRa RF Transceiver. We will use this technology through modules [E28](https://www.amazon.com/Ebyte-%C3%89metteur-r%C3%A9cepteur-Bluetooth-E28-2G4M12S-%C3%A9metteur/dp/B07P2BZW5C) and [Lamda80](https://fr.farnell.com/rf-solutions/lambda80-24s/transceiver-2mbps-2-5ghz/dp/2988571).
+For the long-range communication, we will use the Semtech SX1280, which is a low power 2.4 GHz LoRa RF Transceiver.
+
+Several manufacturers provide RF modules integrating the SX1280 transceiver :
+* [Lambda80 module](https://fr.farnell.com/rf-solutions/lambda80-24s/transceiver-2mbps-2-5ghz/dp/2988571)
+* [EByte E28 module](https://www.amazon.com/Ebyte-%C3%89metteur-r%C3%A9cepteur-Bluetooth-E28-2G4M12S-%C3%A9metteur/dp/B07P2BZW5C)
+* [SX1280PATR24 module](https://fr.aliexpress.com/item/1005001598235704.html) 
+* [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
+* [NiceRF LoRa1280 module](https://www.nicerf.com/products/detail/2-4ghz-lora-wireless-transceiver-module-lora1280-lora1281.html)
+* [NiceRF LoRa1280-TCXO module](https://www.nicerf.com/products/detail/2-4ghz-range-measurement-wirelessly-long-distance-module-lora1280-tcxo.html)
+* [NiceRF LoRa1280F27-TCXO module](https://www.nicerf.com/products/detail/500mw-2-4ghz-lora-wireless-transceiver-module-lora1280f27-tcxo.html)
 
 Project contains several PCBs and firmwares. 
 
@@ -16,9 +26,9 @@ Project contains several PCBs and firmwares.
 * [x] Mikrobus adapter for EByte E28 SX1280 module
 * [ ] Mikrobus adapter for [SX1280PATR24 module](https://fr.aliexpress.com/item/1005001598235704.html) 
 * [ ] Mikrobus adapter for [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
-* [ ] Mikrobus adapter for [NiceRF SX1280 module](https://stuartsprojects.github.io/2019/10/07/2-4ghz-nicerf-sx1280-lora-balloon-tracker-85km-achieved.html)
-* [x] Arduino sketches for ESP32 Vroom 32 + E28 Mikrobus module
-* [x] Arduino sketches for for ESP32 Vroom 32 + Lambda80 Mikrobus module
+* [ ] Mikrobus adapter for [NiceRF SX1280 module](https://stuartsprojects.github.io/2019/10/07/)2-4ghz-nicerf-sx1280-lora-balloon-tracker-85km-achieved.html)
+* [x] [Arduino sketches](./Firmware/Arduino/SX1280) for ESP32 Vroom 32 + E28 Mikrobus module
+* [x] [Arduino sketches](./Firmware/Arduino/SX1280) for for ESP32 Vroom 32 + Lambda80 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Vroom 32 + E28 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Vroom 32 + Lambda80 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Vroom 32 + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
@@ -78,6 +88,6 @@ Mounted PCB with Grove boards ([Grove Thumb Joystick](https://wiki.seeedstudio.c
 
 ## References
 * [ESP32-DevKitC V4 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html)
-* [ESP32 Wroom 32D/U Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf)
+* [ESP32 Wroom 32 D/U Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf)
 * [Buy @ Mouser](https://www.mouser.fr/ProductDetail/Espressif-Systems/ESP32-DevKitC-32U?qs=%252BEew9%252B0nqrCEVvpkdH%2FG5Q==)
 * [Build PCBs @ JLCPCB](https://jlcpcb.com/)
