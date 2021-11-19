@@ -72,6 +72,14 @@ PWM <-> DIO2
 
 Firmware are into [./Firmware](./Firmware).
 
+## Off-the-shelves gateways for LoRa 2.4 GHz
+
+Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels for Tx.
+
+* [Multitech MTCDT + MCard MTAC-LORA-2G4-3](https://www.multitech.net/developer/software/lora/mtac-lora-2g4-3/)
+* [SX1280Z3DSFGW1 LoRa® 2.4GHz 3 Channels Single SF Reference Design](https://fr.semtech.com/products/wireless-rf/lora-24ghz/sx1280zxxxxgw1)
+* [Embit EMB-FEM2GW-O-2G4](http://www.embit.eu/products/gateways-2/emb-fem2gw-o-2g4/)
+
 ## References
 
 * [ESP32-DevKitC V4 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html)
@@ -80,6 +88,7 @@ Firmware are into [./Firmware](./Firmware).
 * [Build PCBs @ JLCPCB](https://jlcpcb.com/)
 
 ## Todolist
+
 * [x] PCB for ESP32 Wroom 32 (38 pins) + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
 * [ ] PCB for ESP32 Wroom 32 (38 pins) + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA) + H-Bridges for driving stepper + Power supply
 * [x] Mikrobus adapter for Lambda80 SX1280 module
