@@ -102,6 +102,7 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 * [ ] Mikrobus adapter for [NiceRF SX1280 module](https://stuartsprojects.github.io/2019/10/07/)2-4ghz-nicerf-sx1280-lora-balloon-tracker-85km-achieved.html)
 * [x] [Arduino sketches](./Firmware/Arduino/SX1280) for ESP32 Wroom 32 + E28 Mikrobus module
 * [x] [Arduino sketches](./Firmware/Arduino/SX1280) for for ESP32 Wroom 32 + Lambda80 Mikrobus module
+* [ ] Move UART Grove connector for using Grove cable with ESP32-WROOM-32D (PCB antenna)
 * [ ] TinyGS firmware for ESP32 Wroom 32 + E28 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Wroom 32 + Lambda80 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Wroom 32 + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
