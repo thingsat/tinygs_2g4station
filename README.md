@@ -24,6 +24,7 @@ Several manufacturers provide RF modules integrating the SX1280 transceiver :
 * [NiceRF LoRa1280 module](https://www.nicerf.com/products/detail/2-4ghz-lora-wireless-transceiver-module-lora1280-lora1281.html)
 * [NiceRF LoRa1280-TCXO module](https://www.nicerf.com/products/detail/2-4ghz-range-measurement-wirelessly-long-distance-module-lora1280-tcxo.html)
 * [NiceRF LoRa1280F27-TCXO module](https://www.nicerf.com/products/detail/500mw-2-4ghz-lora-wireless-transceiver-module-lora1280f27-tcxo.html)
+* [Embit EMB-LR1280S](http://www.embit.eu/products/wireless-modules/emb-lr1280s/)
 
 Project contains several PCBs and firmwares. 
 
