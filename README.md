@@ -85,33 +85,18 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 * [SX1280Z3DSFGW1 LoRa® 2.4GHz 3 Channels Single SF Reference Design](https://fr.semtech.com/products/wireless-rf/lora-24ghz/sx1280zxxxxgw1) (included a removable mPCIe card).
 * [Embit EMB-FEM2GW-O-2G4](http://www.embit.eu/products/gateways-2/emb-fem2gw-o-2g4/) (included a removable mPCIe card EMB-LR1280-mPCIe-4x).
 
+## Other Mikrobus modules
+
+Have a look into the [shop](https://www.mikroe.com/shop)
+
+* [ ] [Geditech](https://www.geditech.fr/) LoRa RN2483
+
 ## References
 
 * [ESP32-DevKitC V4 Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html)
 * [ESP32 Wroom 32 D/U Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf)
-
-## Buy
-
-### ESP32 Wroon 32U
-
-* [ESP32-DevKitC-32U @ Aliexpress](https://fr.aliexpress.com/wholesale?SearchText=ESP32+Wroom+32U)
-* [ESP32-DevKitC-32U @ Mouser](https://www.mouser.fr/ProductDetail/Espressif-Systems/ESP32-DevKitC-32U?qs=%252BEew9%252B0nqrCEVvpkdH%2FG5Q==)
-
-> ESP32 Wroon 32U (38 pins + UFL connector)
-> ESP32 Wroon 32D (38 pins + PCB antenna)
-
-### SX1280 modules
-
-* [LAMBDA80C-24D @ Farnell](https://fr.farnell.com/rf-solutions/lambda80c-24d/transceiver-2mbps-2-5ghz/dp/2988574?st=lambda80) (UFL connector + EM shield)
-
-### PCB
-
-* [Wuerth Elektronik](https://www.we-online.com/web/fr/wuerth_elektronik/start.php) 
-* [JLCPCB](https://jlcpcb.com/)
-
-### Battery Pack
-
-* [Diymore 2x18650 Pack @ Aliexpress](https://fr.aliexpress.com/item/33016661427.html)
+* [Buy @ Mouser](https://www.mouser.fr/ProductDetail/Espressif-Systems/ESP32-DevKitC-32U?qs=%252BEew9%252B0nqrCEVvpkdH%2FG5Q==)
+* [Build PCBs @ JLCPCB](https://jlcpcb.com/)
 
 ## Todolist
 
