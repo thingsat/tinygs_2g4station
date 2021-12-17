@@ -85,11 +85,11 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 * [SX1280Z3DSFGW1 LoRa® 2.4GHz 3 Channels Single SF Reference Design](https://fr.semtech.com/products/wireless-rf/lora-24ghz/sx1280zxxxxgw1) (included a removable mPCIe card).
 * [Embit EMB-FEM2GW-O-2G4](http://www.embit.eu/products/gateways-2/emb-fem2gw-o-2g4/) (included a removable mPCIe card EMB-LR1280-mPCIe-4x).
 
-## Other Mikrobus modules
+## Other Mikrobus modules (for the second Mikrobus slot)
 
 Have a look into the [shop](https://www.mikroe.com/shop)
 
-* [ ] [Geditech](https://www.geditech.fr/) LoRa RN2483
+* [ ] [Geditech](https://www.geditech.fr/)'s LoRa Microchip RN2483 (for 433 MHz and 868 MHz ISM bands)
 
 ## References
 
@@ -102,16 +102,13 @@ Have a look into the [shop](https://www.mikroe.com/shop)
 
 * [ESP32-DevKitC-32U @ Aliexpress](https://fr.aliexpress.com/wholesale?SearchText=ESP32+Wroom+32U)
 * [ESP32-DevKitC-32U @ Mouser](https://www.mouser.fr/ProductDetail/Espressif-Systems/ESP32-DevKitC-32U?qs=%252BEew9%252B0nqrCEVvpkdH%2FG5Q==)
-## Other Mikrobus modules
 
-> ESP32 Wroon 32U (38 pins + UFL connector)
-> ESP32 Wroon 32D (38 pins + PCB antenna)
-Have a look into the [shop](https://www.mikroe.com/shop)
+> **Important: ESP32 Wroon 32U had 38 pins and an UFL connector for an external (high gain and directive) antenna. ESP32 Wroon 32D had 38 pins and a PCB antenna. Choose ESP32 Wroon 32U for a best link margin.**
 
 ### SX1280 modules
-* [ ] [Geditech](https://www.geditech.fr/) LoRa RN2483
 
 * [LAMBDA80C-24D @ Farnell](https://fr.farnell.com/rf-solutions/lambda80c-24d/transceiver-2mbps-2-5ghz/dp/2988574?st=lambda80) (UFL connector + EM shield)
+* [EByte E28-2G4M20S @ Aliexpress](https://fr.aliexpress.com/item/1005001812057589.html) (UFL connector + EM shield)
 
 ### PCB
 
@@ -138,6 +135,7 @@ Have a look into the [shop](https://www.mikroe.com/shop)
 * [ ] TinyGS firmware for ESP32 Wroom 32 + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
 * [ ] Power consumption study with [X-NUCLEO-LPM01A](https://www.st.com/en/evaluation-tools/x-nucleo-lpm01a.html)
 * [ ] RIOTOS firmware for ESP32 Wroom 32 + Lambda80 module (cubesat emulator)
+* [ ] Test the [Geditech](https://www.geditech.fr/)'s LoRa Microchip RN2483 (for 433 MHz and 868 MHz ISM bands) on second slot.
 * [ ] add LICENSE.txt
 
 ## Media
