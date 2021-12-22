@@ -115,8 +115,9 @@ Have a look into the [shop](https://www.mikroe.com/shop)
 * [Wuerth Elektronik](https://www.we-online.com/web/fr/wuerth_elektronik/start.php) 
 * [JLCPCB](https://jlcpcb.com/)
 
-### Battery Pack
-* [Diymore 2x18650 Pack @ Aliexpress](https://fr.aliexpress.com/item/33016661427.html)
+### Power
+* [Diymore 2x18650 Battery Pack @ Aliexpress](https://fr.aliexpress.com/item/33016661427.html)
+* [DFRobot Solar Power Manager 5V](https://www.dfrobot.com/product-1712.html)
 
 ## Todolist
 
