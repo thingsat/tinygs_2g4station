@@ -149,3 +149,5 @@ Here the picture of the board_V1, with or without modules. On last picture, a GP
 Mounted PCB with Grove boards ([Grove Thumb Joystick](https://wiki.seeedstudio.com/Grove-Thumb_Joystick/), [Grove  LSM6DS3 Accelerometer Gyroscope](https://wiki.seeedstudio.com/Grove-6-Axis_AccelerometerAndGyroscope/), [Grove GPS](https://wiki.seeedstudio.com/Grove-GPS/)) and Lamdba80 and E28 module.
 ![TinyGS 2G4](./images/gateway_tinygs_2g4-a.jpg)
 ![TinyGS 2G4](./images/gateway_tinygs_2g4-c.jpg)
+![250 PCB for TinyGS 2G4](./images/250_2g4_ground_stations.jpg)
+
