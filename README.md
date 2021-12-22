@@ -118,6 +118,7 @@ Have a look into the [shop](https://www.mikroe.com/shop)
 ### Power
 * [Diymore 2x18650 Battery Pack @ Aliexpress](https://fr.aliexpress.com/item/33016661427.html)
 * [DFRobot Solar Power Manager 5V](https://www.dfrobot.com/product-1712.html)
+* [DFRobot Solar Power Manager Micro](https://www.dfrobot.com/product-1781.html)
 * [Adafruit Universal USB / DC / Solar Lithium Ion/Polymer charger - bq24074](https://learn.adafruit.com/adafruit-bq24074-universal-usb-dc-solar-charger-breakout/design-notes)
 
 ## Todolist
