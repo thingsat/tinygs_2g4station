@@ -139,6 +139,11 @@ Have a look into the [shop](https://www.mikroe.com/shop)
 * [ ] Power consumption study with [X-NUCLEO-LPM01A](https://www.st.com/en/evaluation-tools/x-nucleo-lpm01a.html)
 * [ ] RIOTOS firmware for ESP32 Wroom 32 + Lambda80 module (cubesat emulator)
 * [ ] Test the [Geditech](https://www.geditech.fr/)'s LoRa Microchip RN2483 (for 433 MHz and 868 MHz ISM bands) on second slot.
+* [ ] Add slots for I2C and UART grove connectors into the two Mikrobus slots (can be used when the Mikrobus slot is not used)
+* [ ] Add slot for female header in order to plug a low-cost SDCard SPI breakout (useful for data logging)
+* [ ] Add slot for female/male header in order to plug a low-cost DS1307/DS3231 breakout (useful for timestamping data log entries)
+* [ ] Add extra slot for power sources (3V3, VCC)
+* [ ] Add white label for DevEUI and serial number on silkscreen layer
 * [ ] add LICENSE.txt
 
 ## Media
