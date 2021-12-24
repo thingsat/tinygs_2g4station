@@ -131,6 +131,7 @@ Have a look into the [shop](https://www.mikroe.com/shop)
 * [ ] Mikrobus adapter for [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
 * [ ] Mikrobus adapter for [NiceRF SX1280 module](https://stuartsprojects.github.io/2019/10/07/2-4ghz-nicerf-sx1280-lora-balloon-tracker-85km-achieved.html)
 * [ ] Mikrobus adapter for [Microchip RN2483 module](https://www.microchip.com/en-us/product/RN2483)
+* [ ] Mikrobus protoshield
 * [x] [Arduino sketches](./Firmware/Arduino/SX1280) for ESP32 Wroom 32 + E28 Mikrobus module
 * [x] [Arduino sketches](./Firmware/Arduino/SX1280) for for ESP32 Wroom 32 + Lambda80 Mikrobus module
 * [ ] Move UART Grove connector for using Grove cable with ESP32-WROOM-32D (PCB antenna)
