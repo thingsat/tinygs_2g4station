@@ -115,7 +115,12 @@ Have a look into the [shop](https://www.mikroe.com/shop)
 * [Wuerth Elektronik](https://www.we-online.com/web/fr/wuerth_elektronik/start.php) 
 * [JLCPCB](https://jlcpcb.com/)
 
-### Power
+### Headers and connectors
+* [20-pin stackable headers (x2)](https://www.mouser.fr/ProductDetail/SparkFun/PRT-14311?qs=sGAEpiMZZMv0NwlthflBiwoz7B0w9MUDoIB50flBSMs%3D) : should be resized to 19 pins.
+* [8-pin stackable headers (x2)](https://www.mouser.fr/ProductDetail/SparkFun/PRT-10007?qs=sGAEpiMZZMvShe%252BZiYheitG2EllKzxS98FBwaVjriqQ%3D)
+* [Grove connectors (x3 but optional)](https://www.mouser.fr/ProductDetail/Seeed-Studio/110990030?qs=1%252B9yuXKSi8Dw9fpnq%252BdNzQ%3D%3D)
+
+### Power (Optional)
 * [Diymore 2x18650 Battery Pack @ Aliexpress](https://fr.aliexpress.com/item/33016661427.html)
 * [DFRobot Solar Power Manager 5V](https://www.dfrobot.com/product-1712.html)
 * [DFRobot Solar Power Manager Micro](https://www.dfrobot.com/product-1781.html)
