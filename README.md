@@ -28,10 +28,6 @@ Several manufacturers provide RF modules integrating the SX1280 transceiver :
 
 Project contains several PCBs and firmwares. 
 
-## LR1120 modules
-
-Coming soon.
-
 ##  Main Board
 
 PCB are made to integrate up to 2 Mikrobus modules including SX1280 technology. Mikrobus board is an add-on board socket standard made by [mikroe](https://www.mikroe.com/mikrobus). This makes the ground station adjustable and modular.
