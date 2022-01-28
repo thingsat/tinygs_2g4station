@@ -35,6 +35,9 @@ Seeedstudio proposes other boards with [various accelerometers](https://wiki.see
 ### Misc
 
 * [TinyGPSPlus_SatelliteTracker](./TinyGPSPlus_SatelliteTracker)
+* [ArduinoP13 TLE](https://github.com/TNeutron/ArduinoP13)
+* [JSON](https://arduinojson.org/)
+* [Sat Tracker](https://github.com/alexchang0229/SatelliteTracker)
 
 ## Arduino external libraries
 
