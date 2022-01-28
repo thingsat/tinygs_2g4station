@@ -69,6 +69,18 @@ PWM <-> DIO2
 
 ![pinouts differences](./images/Pin_E28-Lambda80C.png)
 
+##  Other Mikrobus adapters for SX1280 modules
+
+* [ ] [Geditech](https://www.geditech.fr/)'s LoRa SX1280 adapter
+* [ ] [Stuart Robinson's (GW7HPW) Breadboard Friendly Board for NiceRF SX1280 Module](https://www.tindie.com/products/stuartsprojects/breadboard-friendly-board-for-nicrf-sx1280-module/)
+* [ ] [Stuart Robinson's (GW7HPW) Breadboard Friendly Board for Ebyte E28 Module](https://www.tindie.com/products/stuartsprojects/breadboard-friendly-board-for-ebyte-e28-module/)
+
+## Other Mikrobus modules (for the second Mikrobus slot)
+
+Have a look into the [shop](https://www.mikroe.com/shop)
+
+* [ ] [Geditech](https://www.geditech.fr/)'s LoRa Microchip RN2483 (for 433 MHz and 868 MHz ISM bands)
+
 ## Firmware
 
 Firmware are into [./Firmware](./Firmware).
@@ -81,11 +93,6 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 * [SX1280Z3DSFGW1 LoRa® 2.4GHz 3 Channels Single SF Reference Design](https://fr.semtech.com/products/wireless-rf/lora-24ghz/sx1280zxxxxgw1) (included a removable mPCIe card).
 * [Embit EMB-FEM2GW-O-2G4](http://www.embit.eu/products/gateways-2/emb-fem2gw-o-2g4/) (included a removable mPCIe card EMB-LR1280-mPCIe-4x).
 
-## Other Mikrobus modules (for the second Mikrobus slot)
-
-Have a look into the [shop](https://www.mikroe.com/shop)
-
-* [ ] [Geditech](https://www.geditech.fr/)'s LoRa Microchip RN2483 (for 433 MHz and 868 MHz ISM bands)
 
 ## References
 
