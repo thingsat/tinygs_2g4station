@@ -6,13 +6,16 @@ The test are based on the Arduino library for SX12XX https://github.com/StuartsP
 
 ### Toolchain and SX128x Libraries
 
-Add the Espressif toolchain into Preferences > URL of Board manager `https://dl.espressif.com/dl/package_esp32_index.json`
+Add the Espressif toolchain `https://dl.espressif.com/dl/package_esp32_index.json` into `Preferences > URL of Board manager` 
 
-Select the ESP32 board into Tools > Board type > ESP32 Arduino > ESP32 Dev Module
+Select the ESP32 board into `Tools > Board type > ESP32 Arduino > ESP32 Dev Module`
 
 Download the lib `https://codeload.github.com/StuartsProjects/SX12XX-LoRa/zip/refs/heads/master`
 
 Install the lib with `Sketch > Include Lib > Add Zip Lib`
+
+Set the serial console to `115200 8N1`.
+
 
 ### Check the module definition
 
