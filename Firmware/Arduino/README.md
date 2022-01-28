@@ -1,4 +1,4 @@
-# TinyGS 2G4 :: Firmware :: Aduino
+# TinyGS 2G4 :: Firmware :: Arduino
 
 ## Arduino IDE configuration
 
