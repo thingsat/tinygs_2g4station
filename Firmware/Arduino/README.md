@@ -1,10 +1,16 @@
 # TinyGS 2G4 :: Firmware :: Arduino
 
-## Arduino IDE configuration
+### Toolchain and SX128x Libraries
 
-* Add `https://dl.espressif.com/dl/package_esp32_index.json` into `URL of board manager` (`Preferences` Menu).
-* Choose `ESP32 Arduino > ESP 32 Dev Module` 
-* Console should be configured with `115200 8N1`.
+Add the Espressif toolchain `https://dl.espressif.com/dl/package_esp32_index.json` into `Preferences > URL of Board manager` 
+
+Select the ESP32 board into `Tools > Board type > ESP32 Arduino > ESP32 Dev Module`
+
+Download the lib `https://codeload.github.com/StuartsProjects/SX12XX-LoRa/zip/refs/heads/master`
+
+Install the lib with `Sketch > Include Lib > Add Zip Lib`
+
+Set the serial console to `115200 8N1`.
 
 ## Examples
 
