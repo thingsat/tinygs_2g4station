@@ -129,6 +129,9 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 * [DFRobot Solar Power Manager Micro](https://www.dfrobot.com/product-1781.html)
 * [Adafruit Universal USB / DC / Solar Lithium Ion/Polymer charger - bq24074](https://learn.adafruit.com/adafruit-bq24074-universal-usb-dc-solar-charger-breakout/design-notes)
 
+### Misc
+* [SuperAntennaz](https://wiki.satnogs.org/SuperAntennaz)
+
 ## Todolist
 
 * [x] PCB for ESP32 Wroom 32 (38 pins) + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
