@@ -149,6 +149,7 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 * [ ] TinyGS firmware for ESP32 Wroom 32 + E28 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Wroom 32 + Lambda80 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Wroom 32 + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
+* [ ] TinyGS firmware for [Wio Terminal](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/) + Lambda80 Mikrobus module
 * [ ] Power consumption study with [X-NUCLEO-LPM01A](https://www.st.com/en/evaluation-tools/x-nucleo-lpm01a.html)
 * [ ] RIOTOS firmware for ESP32 Wroom 32 + Lambda80 module (cubesat emulator)
 * [ ] Test the [Geditech](https://www.geditech.fr/)'s LoRa Microchip RN2483 (for 433 MHz and 868 MHz ISM bands) on second slot.
