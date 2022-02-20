@@ -1,4 +1,4 @@
-# Lambda80
+# Mikro Adapter for Lambda80-24S SX1280 Module
 
 This is a board to support a lambda80C 2.4GHz LORA transceiver RF module, adapted to Mikrobus standard pinout specification.
 
@@ -9,7 +9,7 @@ Some Specification:
 * High sensitivity: down to -132 dBm
 * RF Data Rate: FSK upto 2.02Mbps - LoRa upto 476bps
 
-Programing of the module is via SPI interface. This module has as pin BUSY, RESET, SPI, 3 DIO (Digital I/O software configured) and a Antenna connection ìCî Versions. Antenna  is connectable with a connector UFL female.
+Programing of the module is via SPI interface. This module has as pin BUSY, RESET, SPI, 3 DIO (Digital I/O software configured) and a Antenna connection ‚ÄúC‚Äù Versions. Antenna  is connectable with a connector UFL female.
 
 
 Here the connection between the Mikrobus standard pin and the Lambda80 module pin
