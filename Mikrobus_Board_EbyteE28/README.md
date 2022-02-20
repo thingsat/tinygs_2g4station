@@ -1,6 +1,6 @@
-# Ebyte_E28
+# Mikrobus Adapter for Ebyte E28 SX1280 Module
 
-This is a board to support a Ebyte E28 2.4GHz LORA transceiver RF module, adapted to Mikrobus standard pinout specification. This board will allow you to use your Ebyte E28-2G4M module with a standard 0.1î matrix breadboard or a Mikrobus Standard.
+This is a board to support a Ebyte E28 2.4GHz LORA transceiver RF module, adapted to Mikrobus standard pinout specification. This board will allow you to use your Ebyte E28-2G4M module with a standard 0.1‚Äù matrix breadboard or a Mikrobus Standard.
 
 The Ebyte E28-2G4M is a RF transceiver module using the Semtech SX1280 LoRa technology, operate in 2.400 ~ 2.500GHz with ultra-low power consumption. More information available on [Ebyte site](https://www.ebyte.com/en/product-view-news.html?id=286). 
 
@@ -28,10 +28,14 @@ Ebyte E28 is supplied with 3.3V, by the +3.3V Mikrobus pin.
 
 The Ebyte E28 module has a PCB antenna, so no external antenna is needed, but the here also a SMA connector to use a external antenna.
 
-### Kicad Project
+## Kicad Project
 The project was made on Kikad, which is a free software for electronics circuit board design, developed by IUT of Grenoble.
 
 For the mikrobus lib and footprint, I use the [MIKROE-924](https://componentsearchengine.com/part-view/MIKROE-924/MIKROELEKTRONIKA) model available on [component search engine](https://componentsearchengine.com/).
 For the E28 schematic and footprint, I found nothing on internet so I made my own. 
 
 All the schematic and footprint are in the "Lib & Fp" folder. For the Mikrobus lib, you have to choose the KiCad folder.
+
+## TODO
+
+* [ ] Move module in order to place the PCB antenna outside of the adapter.
