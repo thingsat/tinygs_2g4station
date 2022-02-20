@@ -132,6 +132,12 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 ### Misc
 * [SuperAntennaz](https://wiki.satnogs.org/SuperAntennaz)
 
+## Licenses
+
+For PCB designs, the license is [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+For Software, check the license into each directory.
+
 ## Todolist
 
 * [x] PCB for ESP32 Wroom 32 (38 pins) + 2 Mikrobus modules + 3 groves connectors (RXTX,I2C,ANA)
@@ -159,7 +165,7 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 * [ ] Add extra slot for power sources (3V3, VCC)
 * [ ] Add white label for DevEUI and serial number on silkscreen layer
 * [ ] Design Fritzing part for the station
-* [ ] add LICENSE.txt
+* [x] add licenses
 
 ## Media
 
