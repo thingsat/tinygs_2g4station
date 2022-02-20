@@ -1,4 +1,4 @@
-# Mikro Adapter for Lambda80-24S SX1280 Module
+# Mikrobus Adapter for Lambda80-24S SX1280 Module
 
 This is a board to support a lambda80C 2.4GHz LORA transceiver RF module, adapted to Mikrobus standard pinout specification.
 
