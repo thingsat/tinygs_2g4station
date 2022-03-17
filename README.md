@@ -111,6 +111,7 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 ### SX1280 modules
 
 * [LAMBDA80C-24D @ Farnell](https://fr.farnell.com/rf-solutions/lambda80c-24d/transceiver-2mbps-2-5ghz/dp/2988574?st=lambda80) (UFL connector + EM shield)
+* [LAMBDA80C-24S @ Mouser](https://www.mouser.fr/ProductDetail/RF-Solutions/LAMBDA80C-24S?qs=17u8i%2FzlE89dhjIrlJ9FHg%3D%3D) (UFL connector + EM shield)
 * [EByte E28-2G4M20S @ Aliexpress](https://fr.aliexpress.com/item/1005001812057589.html) (UFL connector + EM shield)
 
 ### PCB
@@ -150,7 +151,8 @@ For Software, check the license into each directory.
 * [ ] Mikrobus adapter for [Microchip RN2483 module](https://www.microchip.com/en-us/product/RN2483)
 * [ ] Mikrobus protoshield
 * [x] [Arduino sketches](./Firmware/Arduino/SX1280) for ESP32 Wroom 32 + E28 Mikrobus module
-* [x] [Arduino sketches](./Firmware/Arduino/SX1280) for for ESP32 Wroom 32 + Lambda80 Mikrobus module
+* [x] [Arduino sketches](./Firmware/Arduino/SX1280) for ESP32 Wroom 32 + Lambda80 Mikrobus module
+* [ ] [Arduino sketches](./Firmware/Arduino/SX1280) for Wio Terminal + Lambda80 Mikrobus module
 * [ ] Move UART Grove connector for using Grove cable with ESP32-WROOM-32D (PCB antenna)
 * [ ] TinyGS firmware for ESP32 Wroom 32 + E28 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Wroom 32 + Lambda80 Mikrobus module
