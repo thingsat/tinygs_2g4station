@@ -119,6 +119,21 @@ Plus any modules on the filesystem
 
 ## Blink LED
 
+Add a LED on pin 15
+
+```python
+import time
+from machine import Pin
+led=Pin(15,Pin.OUT)
+ 
+while True:
+  led.value(1)
+  time.sleep(0.5)
+  led.value(0)
+  time.sleep(0.5)
+
+```
+
 
 ## Scan Wifi networks
 
@@ -142,20 +157,6 @@ for i in n:
 
 ## GPIO
 
-Add a LED on pin 15
-
-```python
-import time
-from machine import Pin
-led=Pin(15,Pin.OUT)
- 
-while True:
-  led.value(1)
-  time.sleep(0.5)
-  led.value(0)
-  time.sleep(0.5)
-
-```
 ## GPS
 
 ## LoRa SX1280
