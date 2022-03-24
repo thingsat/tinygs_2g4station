@@ -166,6 +166,7 @@ For Software, check the license into each directory.
 * [ ] Add slot for female/male header in order to plug a low-cost DS1307/DS3231 breakout (useful for timestamping data log entries)
 * [ ] Add extra slot for power sources (3V3, VCC)
 * [ ] Add white label for DevEUI and serial number on silkscreen layer
+* [ ] Add pin for IRQ on [GNSS PPS](https://en.wikipedia.org/wiki/Pulse-per-second_signal)
 * [ ] Design Fritzing part for the station
 * [x] add licenses
 
