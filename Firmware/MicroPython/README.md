@@ -2,7 +2,7 @@
 
 ## Installation
 
-Download and flash the micropython firmware
+Download and flash the latest firmware of micropython for ESP32 boards
 * http://micropython.org/download/
 * https://micropython.org/download/esp32
 
@@ -142,8 +142,22 @@ for i in n:
 
 ## GPIO
 
+Add a LED on pin 15
+
+```python
+import time
+from machine import Pin
+led=Pin(15,Pin.OUT)
+ 
+while True:
+  led.value(1)
+  time.sleep(0.5)
+  led.value(0)
+  time.sleep(0.5)
+
+```
 ## GPS
 
-### LoRa SX1280
+## LoRa SX1280
 
 
