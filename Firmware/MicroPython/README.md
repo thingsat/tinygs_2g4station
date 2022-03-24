@@ -134,6 +134,39 @@ while True:
 
 ```
 
+## ADC
+
+```python
+from machine import ADC
+
+adc = ADC(pin)        # create an ADC object acting on a pin
+val = adc.read_u16()  # read a raw analog value in the range 0-65535
+val = adc.read_uv()   # read an analog value in microvolts
+```
+
+## Get temperature on DS1820 OneWire sensor
+
+```python
+from machine import Pin
+import onewire
+
+ow = onewire.OneWire(Pin(12)) # create a OneWire bus on GPIO12
+ow.scan()               # return a list of devices on the bus
+ow.reset()              # reset the bus
+
+import time, ds18x20
+
+ds = ds18x20.DS18X20(ow)
+roms = ds.scan()
+ds.convert_temp()
+time.sleep_ms(750)
+for rom in roms:
+    print(ds.read_temp(rom))
+```
+
+## GPIO
+
+## GPS
 
 ## Scan Wifi networks
 
@@ -155,10 +188,56 @@ for i in n:
 
 ## MQTT subscriber and publisher
 
-## GPIO
+## SDCard
 
-## GPS
+```python
+import machine, os
+
+# Slot 2 uses pins sck=18, cs=5, miso=19, mosi=23
+sd = machine.SDCard(slot=2)
+os.mount(sd, "/sd")  # mount
+
+os.listdir('/sd')    # list directory contents
+
+os.umount('/sd')     # eject
+```
 
 ## LoRa SX1280
+
+## WebREPL (web browser interactive prompt)¶
+
+WebREPL (REPL over WebSockets, accessible via a web browser) is an experimental feature available in ESP32 port. Download web client from https://github.com/micropython/webrepl (hosted version available at http://micropython.org/webrepl), and configure it by executing:
+
+```python
+import webrepl_setup
+import webrepl
+webrepl.start(password='mypass')
+```
+
+## Deepsleep
+
+```python
+import machine
+
+# configure RTC.ALARM0 to be able to wake the device
+rtc = machine.RTC()
+rtc.irq(trigger=rtc.ALARM0, wake=machine.DEEPSLEEP)
+
+# set RTC.ALARM0 to fire after 10 seconds (waking the device)
+rtc.alarm(rtc.ALARM0, 10000)
+
+# put the device to sleep
+machine.deepsleep()
+```
+
+Note that when the chip wakes from a deep-sleep it is completely reset, including all of the memory. The boot scripts will run as usual and you can put code in them to check the reset cause to perhaps do something different if the device just woke from a deep-sleep. For example, to print the reset cause you can use:
+
+```python
+if machine.reset_cause() == machine.DEEPSLEEP_RESET:
+    print('woke from a deep sleep')
+else:
+    print('power on or hard reset')
+```
+
 
 
