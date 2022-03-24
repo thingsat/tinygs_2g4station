@@ -14,7 +14,7 @@ FIRMWARE=~/Downloads/esp32-20220117-v1.18.bin
 $ESPTOOL --chip esp32 --port $PORT erase_flash
 ```
 
-````
+```
 esptool.py v2.4.0
 Connecting........_____....._____..
 Chip is ESP32D0WDQ6 (revision 1)
@@ -117,7 +117,10 @@ Plus any modules on the filesystem
 >>> 
 ```
 
-### Scan Wifi networks
+## Blink LED
+
+
+## Scan Wifi networks
 
 ```python
 import network
@@ -129,15 +132,17 @@ for i in n:
   print(i[0], i[2], i[3], 'dBm')
 ```
 
-### NTP Time and RTC
+## Connect to a Wifi network
 
-### HTTP GET
+## NTP Time and RTC
 
-### MQTT subscriber and publisher
+## HTTP GET
 
-### GPIO
+## MQTT subscriber and publisher
 
-### GPS
+## GPIO
+
+## GPS
 
 ### LoRa SX1280
 
