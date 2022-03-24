@@ -119,6 +119,18 @@ Plus any modules on the filesystem
 
 ## Blink LED
 
+```python
+from machine import Timer
+
+tim0 = Timer(0)
+tim0.init(period=5000, mode=Timer.ONE_SHOT, callback=lambda t:print(0))
+
+tim1 = Timer(1)
+tim1.init(period=2000, mode=Timer.PERIODIC, callback=lambda t:print(1))
+```
+
+## Blink LED
+
 Add a LED on pin 15
 
 ```python
@@ -131,7 +143,6 @@ while True:
   time.sleep(0.5)
   led.value(0)
   time.sleep(0.5)
-
 ```
 
 ## ADC
