@@ -6,9 +6,16 @@ Download and flash the latest firmware of micropython for ESP32 boards
 * http://micropython.org/download/
 * https://micropython.org/download/esp32
 
+Download the esptool.py [here](https://github.com/espressif/esptool).
 
 ```bash
-ESPTOOL=~/tools/esptools/esptool.py
+mkdir ~/github/espressif
+cd ~/github/espressif
+git clone https://github.com/espressif/esptool
+```
+
+```bash
+ESPTOOL=~/github/espressif/esptool/esptool.py
 PORT=/dev/tty.usbserial-0001
 FIRMWARE=~/Downloads/esp32-20220117-v1.18.bin
 $ESPTOOL --chip esp32 --port $PORT erase_flash
@@ -178,6 +185,14 @@ for rom in roms:
 ## GPIO
 
 ## GPS
+
+```python
+TODO
+```
+
+* https://github.com/inmcm/micropyGPS
+* https://github.com/boneskull/micropython-nmea/
+* https://stm32python.gitlab.io/fr/docs/Micropython/grove/gps
 
 ## Scan Wifi networks
 
