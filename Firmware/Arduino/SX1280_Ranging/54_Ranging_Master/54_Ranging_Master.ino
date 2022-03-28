@@ -29,8 +29,17 @@ int32_t range_result;
 int16_t RangingRSSI;
 
 
+uint32_t test_counter=0;
+
 void loop()
 {
+  Serial.print(F("\nTEST #"));
+  Serial.println(++test_counter);
+
+
+  rangeings_valid = 0;
+  rangeing_errors = 0;
+
   uint8_t index;
   distance_sum = 0;
   range_result_sum = 0;
@@ -41,7 +50,7 @@ void loop()
 
     startrangingmS = millis();
 
-    Serial.println(F("Start Ranging"));
+    Serial.println(F("Start Ranging ..."));
 
     LT.transmitRanging(RangingAddress, TXtimeoutmS, RangingTXPower, WAIT_TX);
 
@@ -54,7 +63,7 @@ void loop()
       digitalWrite(LED1, HIGH);
       Serial.print(F("Valid"));
       range_result = LT.getRangingResultRegValue(RANGING_RESULT_RAW);
-      Serial.print(F(",Register,"));
+      Serial.print(F(",Register="));
       Serial.print(range_result);
 
       if (range_result > 800000)
@@ -66,12 +75,12 @@ void loop()
       distance = LT.getRangingDistance(RANGING_RESULT_RAW, range_result, distance_adjustment);
       distance_sum = distance_sum + distance;
 
-      Serial.print(F(",Distance,"));
+      Serial.print(F(",Distance="));
       Serial.print(distance, 1);
-      Serial.print(F(",RSSIReg,"));
+      Serial.print(F("m,RSSIReg="));
       Serial.print(LT.readRegister(REG_RANGING_RSSI));
       RangingRSSI = LT.getRangingRSSI();
-      Serial.print(F(",RSSI,"));
+      Serial.print(F("dBm,RSSI="));
       Serial.print(RangingRSSI);
       Serial.print(F("dBm"));
       digitalWrite(LED1, LOW);
@@ -82,32 +91,38 @@ void loop()
       distance = 0;
       range_result = 0;
       Serial.print(F("NotValid"));
-      Serial.print(F(",Irq,"));
+      Serial.print(F(",Irq="));
       Serial.print(IrqStatus, HEX);
     }
     delay(packet_delaymS);
 
     if (index == rangeingcount)
     {
-      range_result_average = (range_result_sum / rangeing_results);
 
       if (rangeing_results == 0)
       {
         distance_average = 0;
+        range_result_average = 0;
       }
       else
       {
         distance_average = (distance_sum / rangeing_results);
+        range_result_average = (range_result_sum / rangeing_results);
       }
 
-      Serial.print(F(",TotalValid,"));
+      Serial.print(F("\n\n"));
+      Serial.print(F("Test="));
+      Serial.print(test_counter);
+
+      Serial.print(F(",TotalValid="));
       Serial.print(rangeings_valid);
-      Serial.print(F(",TotalErrors,"));
+      Serial.print(F(",TotalErrors="));
       Serial.print(rangeing_errors);
-      Serial.print(F(",AverageRAWResult,"));
+      Serial.print(F(",AverageRAWResult="));
       Serial.print(range_result_average);
-      Serial.print(F(",AverageDistance,"));
+      Serial.print(F(",AverageDistance="));
       Serial.print(distance_average, 1);
+      Serial.print(F("m"));
 
 #ifdef ENABLEDISPLAY
       display_screen1();

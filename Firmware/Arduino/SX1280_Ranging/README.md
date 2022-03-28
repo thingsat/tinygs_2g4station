@@ -2,12 +2,11 @@
 
 The test are based on the Arduino library for SX12XX https://github.com/StuartsProjects/SX12XX-LoRa
 
+Read [ranging.md](ranging.md)
+
 ## Instructions
 
-TODO
-
-
-Slave
+Build and flash `54_Ranging_Slave.ino` on the first board.
 
 ```
 451 Response sent
@@ -18,23 +17,24 @@ Slave
 ```
 
 
-Master
+Build and flash `55_Ranging_Master.ino` on the second board.
 
 ```
-Valid,Register,513,Distance,23.1,RSSIReg,103,RSSI,-47dBm
-Start Ranging
-Valid,Register,514,Distance,23.2,RSSIReg,103,RSSI,-47dBm
-Start Ranging
-Valid,Register,499,Distance,22.5,RSSIReg,103,RSSI,-47dBm
-Start Ranging
-Valid,Register,446,Distance,20.1,RSSIReg,104,RSSI,-46dBm
-Start Ranging
-Valid,Register,392,Distance,17.7,RSSIReg,98,RSSI,-52dBm,TotalValid,15,TotalErrors,0,AverageRAWResult,472,AverageDistance,21.3
+TEST #74
+Start Ranging ...
+Valid,Register=528,Distance=23.8m,RSSIReg=109dBm,RSSI=-41dBm
+Start Ranging ...
+Valid,Register=437,Distance=19.7m,RSSIReg=94dBm,RSSI=-56dBm
+Start Ranging ...
+Valid,Register=480,Distance=21.6m,RSSIReg=109dBm,RSSI=-41dBm
+Start Ranging ...
+Valid,Register=529,Distance=23.8m,RSSIReg=92dBm,RSSI=-58dBm
+Start Ranging ...
+Valid,Register=449,Distance=20.2m,RSSIReg=111dBm,RSSI=-39dBm
+
+Test=74,TotalValid=5,TotalErrors=0,AverageRAWResult=484,AverageDistance=21.8m
+
 ```
-
-
-
-
 
 ## References
 
