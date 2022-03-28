@@ -5,6 +5,11 @@
   suitable for the intended purpose and free from errors.
 *******************************************************************************************************/
 
+
+#ifndef MIKROBUS0_LAMBDA80
+#define MIKROBUS0_LAMBDA80    1
+#endif
+
 //*******  Setup LoRa Parameters Here ! ***************
 
 

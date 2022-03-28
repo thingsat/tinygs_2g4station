@@ -5,6 +5,10 @@
   suitable for the intended purpose and free from errors.
 *******************************************************************************************************/
 
+#ifndef MIKROBUS0_LAMBDA80
+#define MIKROBUS0_LAMBDA80    1
+#endif
+
 //*******  Setup hardware pin definitions here ! ***************
 
 //These are the pin definitions for TinyGS 2G4 mikrobus modules
