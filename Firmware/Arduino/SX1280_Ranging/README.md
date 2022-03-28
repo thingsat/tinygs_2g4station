@@ -6,6 +6,36 @@ The test are based on the Arduino library for SX12XX https://github.com/StuartsP
 
 TODO
 
+
+Slave
+
+```
+451 Response sent
+452 Response sent
+453 Response sent
+454 Response sent
+455 Response sent
+```
+
+
+Master
+
+```
+Valid,Register,513,Distance,23.1,RSSIReg,103,RSSI,-47dBm
+Start Ranging
+Valid,Register,514,Distance,23.2,RSSIReg,103,RSSI,-47dBm
+Start Ranging
+Valid,Register,499,Distance,22.5,RSSIReg,103,RSSI,-47dBm
+Start Ranging
+Valid,Register,446,Distance,20.1,RSSIReg,104,RSSI,-46dBm
+Start Ranging
+Valid,Register,392,Distance,17.7,RSSIReg,98,RSSI,-52dBm,TotalValid,15,TotalErrors,0,AverageRAWResult,472,AverageDistance,21.3
+```
+
+
+
+
+
 ## References
 
 * [Semtech, Theory and Principle of Operation: Advanced Ranging, Technical Report, February 2021](https://lora-developers.semtech.com/uploads/documents/files/TheoryAndPrinciples_AdvancedRanging_SX1280_v7.pdf)
