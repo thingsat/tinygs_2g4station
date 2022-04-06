@@ -2,7 +2,18 @@
 
 The test are based on the Arduino library for SX12XX https://github.com/StuartsProjects/SX12XX-LoRa
 
-Read [ranging.md](ranging.md)
+## Basic operations
+
+Read [ranging.md](ranging.md) and [Application Note: An Introduction to Ranging with the SX1280 Transceiver](https://semtech--c.na98.content.force.com/sfc/dist/version/download/?oid=00DE0000000JelG&ids=06844000005gpO1AAI&d=%2Fa%2F44000000MDiH%2FOF02Lve2RzM6pUw9gNgSJXbDNaQJ_NtQ555rLzY3UvY&operationContext=DELIVERY&viewId=05H2R000002XSa6UAG&dpt=)
+
+The ranging functionality of SX1280 is based upon the measurement of a round trip time of flight between a pair of SX1280 transceivers. This process uses the LoRa modulation scheme so the ranging benefits from all of the advantages of long range and operation at low consumption conferred by LoRa. The basic ranging operation is outlined in the sequence below:
+
+![SX1280 Ranging Basic Operations](./SX1280_Ranging_Basic_Operations.png)
+
+1. One SX1280 assumes the role of Master and initiates a ranging exchange by transmission of a ranging request. The ranging request is addressed to another SX1280, which must be configured in ranging Slave mode, so ready to receive the incoming ranging request. At the moment that the Master sends the ranging request, it also starts an internal timer.
+1. The ranging request is received by the addressed Slave, which synchronizes itself with the incoming signal. The Slave does not know at which time the signal was set, but the synchronization process requires a fixed amount of time known by the Master. Master and Slave never share a common absolute timing reference.
+1. Finally the Slave sends the synchronized ranging response back to the Master, upon reception of which the Master can deduce the round-trip time of flight from the time elapsed i.e. the time taken for the electromagnetic wave to propagate from Master to Slave and back again.
+
 
 ## Instructions
 
