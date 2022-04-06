@@ -58,3 +58,5 @@ Test=74,TotalValid=5,TotalErrors=0,AverageRAWResult=484,AverageDistance=21.8m
 * [Semtech, Theory and Principle of Operation: Advanced Ranging, Technical Report, February 2021](https://lora-developers.semtech.com/uploads/documents/files/TheoryAndPrinciples_AdvancedRanging_SX1280_v7.pdf)
 * [Semtech, Application Note: An Introduction to Ranging with the SX1280 Transceiver](https://semtech--c.na98.content.force.com/sfc/dist/version/download/?oid=00DE0000000JelG&ids=06844000005gpO1AAI&d=%2Fa%2F44000000MDiH%2FOF02Lve2RzM6pUw9gNgSJXbDNaQJ_NtQ555rLzY3UvY&operationContext=DELIVERY&viewId=05H2R000002XSa6UAG&dpt=)
 * [P. Müller, H. Stoll, L. Sarperi and C. Schüpbach, "Outdoor Ranging and Positioning based on LoRa Modulation," 2021 International Conference on Localization and GNSS (ICL-GNSS), 2021, pp. 1-6, doi: 10.1109/ICL-GNSS51451.2021.9452277.](https://digitalcollection.zhaw.ch/bitstream/11475/22769/3/2021_Mueller-etal_Outdoor-ranging-and-positioning-based-on-LoRa-modulation.pdf)
+* [Firefighter indoor localization (POUCET)](https://www.researchgate.net/publication/336346405_Firefighter_indoor_localization_POUCET)
+
