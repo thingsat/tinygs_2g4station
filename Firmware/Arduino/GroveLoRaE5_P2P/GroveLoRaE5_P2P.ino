@@ -1,8 +1,10 @@
 // INO from https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/
 
+#define Program_Version "V1.0"
+
 // #define NODE_SLAVE
 
-#include <Arduino.h>
+// #include <Arduino.h>
 
 #ifdef ENABLE_DISPLAY
 #include <U8x8lib.h>

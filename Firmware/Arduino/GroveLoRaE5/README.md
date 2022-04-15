@@ -244,5 +244,13 @@ AT+DR=0
 
 ## Sketch Arduino sur TinyGS 2G4 (connecteur Grove UART)
 
+Le modem Grove LoRa E5 peut soit être branché sur le connecteur Grove UART de la carte TinyGS soit être branché sur le header 2x19 : Le fil blanc du cable Grove doit être branché sur la broche 17 du header 2x19 et le fil jaune du cable Grove doit être branché sur la broche 16.
 
+Configurez les constantes dans le sketch
+```c
+#define DEBUG_AT 1
+#define SEND_PERIOD 60000
+#define REJOIN_PERIOD 60000
+#define CONFIRMED 1
+```
 
