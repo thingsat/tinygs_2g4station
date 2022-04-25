@@ -1,10 +1,83 @@
-# Grove LoRa E5
+# TinyGS 2G4 avec Grove LoRa E5
+
+La platine [Grove LoRa E5](https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version) est un modem LoRaWAN basé sur le composant STM32WL55JC1. Le modem est commandable via des commandes AT (voir la [section Bonus](#Bonus)).
+
+Il peut être branché sur la carte TinyGS 2G4 pour ajouter la connectivité LoRaWAN sur les bandes SubGHz (eu868, eu433 ...).
+
+## Branchement
+
+Le modem Grove LoRa E5 peut soit être branché 
+* soit sur le connecteur Grove UART de la carte TinyGS
+* soit être branché sur le header 2x19 de la carte TinyGS : Le fil blanc du cable Grove doit être branché sur la broche 17 du header 2x19 et le fil jaune du cable Grove doit être branché sur la broche 16.
+
+## Sketch Arduino sur TinyGS 2G4
+
+Ouvrez le Sketch [GroveLoRaE5.ino](GroveLoRaE5.ino)
+
+Configurez les constantes dans le sketch
+```c
+#define DEBUG_AT 1
+#define SEND_PERIOD 60000
+#define REJOIN_PERIOD 60000
+#define CONFIRMED 1
+```
+
+## Enregistrement
+
+Repérez et relevez le `DevEUI`, l'`AppEUI` et l'`AppKey` de la [platine Grove LoRa E5](https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/) dans la console série du enpoint.
+
+Enregistrez le enpoint sur un réseau LoRaWAN ([TTN](https://console.cloud.thethings.network/), [Helium](https://console.helium.com/) ou Chirpstack) en utilisant le `DevEUI`, l'`AppEUI` et l'`AppKey` relevés.
+
+> Vous pouvez changer les valeurs d'`AppEUI` et d'`AppKey` dans le croquis.
+
+
+## Ajout d'une platine avec un capteur I2C
+
+Vous pouvez améliorer le sketch en branchant une platine avec un capteur I2C sur le connecteur Grove I2C de la carte TinyGS
+
+Ajoutez alors un décodeur adapté lors de l'enregistrement du enpoint sur le réseau LoRaWAN choisi.
+
+Par exemple :
+
+```javascript
+function readInt16BE (buf, offset) {
+    offset = offset >>> 0
+    var val = buf[offset + 1] | (buf[offset] << 8)
+    return (val & 0x8000) ? val | 0xFFFF0000 : val
+  }
+
+// For Helium et TTNv2
+function Decode(fPort, bytes, variables) {
+    var o = {};  
+    o.temperature = readInt16BE(bytes,0);
+    o.humidity = readInt16BE(bytes,2);
+    // ...
+    return o;
+}
+
+// For Helium et TTNv2
+function Decoder(bytes, fPort) {
+    return Decode(fPort, bytes, undefined);
+}
+
+// For  TTNv3 TODO
+
+```
+
+> Pour Helium, il faut [créer une nouvelle fonction](https://console.helium.com/functions).
+
+Faites quelques tests pour changer les valeurs du capteur ...
+
+Regardez les messages LoRaWAN envoyés par l'endpoint lorsque la procédure d'activation OTAA a réussi.
+
+## Références
 
 * https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/
 * https://files.seeedstudio.com/products/317990687/res/LoRa-E5%20AT%20Command%20Specification_V1.0%20.pdf
 
+## Bonus
 
-## Utilisation avec un adaptateur USB Série (aka FTDI)
+### Utilisation avec un adaptateur USB Série (aka FTDI) depuis un hôte Linux/MacOS/Windows
 
 Branchez un cable Grove femelle sur l'adapteur USB Série (`RX` sur fil jaune, `TX` sur fil blanc).
 
@@ -14,7 +87,7 @@ Ouvrez une console série sur le prot série avec les paramêtres `9600 8N1`.
 AT+ID                                                                   
 +INFO: Input timeout                                                            
 +ID: DevAddr, 32:30:A5:01                                                       
-+ID: DevEui, 2C:F7:F1:20:32:30:00:01                                            
++ID: DevEui, 2C:F7:F1:20:12:23:34:45                                            
 +ID: AppEui, 80:00:00:00:00:00:00:06                                            
 
 AT+DR=EU868
@@ -59,7 +132,7 @@ AT+JOIN
 AT+ID
 +INFO: Input timeout                                                            
 +ID: DevAddr, FC:00:AC:2C                                                       
-+ID: DevEui, 2C:F7:F1:20:32:30:00:01                                            
++ID: DevEui, 2C:F7:F1:20:12:23:34:45                                            
 +ID: AppEui, 80:00:00:00:00:00:00:06                                            
 
 AT+CMSGHEX=2122232421222324
@@ -236,21 +309,5 @@ AT+DR=0
 +INFO: Input timeout                                                                                            
 +DR: DR0                                                                                                        
 +DR: EU868 DR0  SF12 BW125K                                                                                     
-```
-
-## Sketch Arduino sur Wio Terminal
-
-
-
-## Sketch Arduino sur TinyGS 2G4 (connecteur Grove UART)
-
-Le modem Grove LoRa E5 peut soit être branché sur le connecteur Grove UART de la carte TinyGS soit être branché sur le header 2x19 : Le fil blanc du cable Grove doit être branché sur la broche 17 du header 2x19 et le fil jaune du cable Grove doit être branché sur la broche 16.
-
-Configurez les constantes dans le sketch
-```c
-#define DEBUG_AT 1
-#define SEND_PERIOD 60000
-#define REJOIN_PERIOD 60000
-#define CONFIRMED 1
 ```
 
