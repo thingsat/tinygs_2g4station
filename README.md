@@ -105,6 +105,7 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 
 * [ESP32-DevKitC-32U @ Aliexpress](https://fr.aliexpress.com/wholesale?SearchText=ESP32+Wroom+32U)
 * [ESP32-DevKitC-32U @ Mouser](https://www.mouser.fr/ProductDetail/Espressif-Systems/ESP32-DevKitC-32U?qs=%252BEew9%252B0nqrCEVvpkdH%2FG5Q==)
+* [ESP32-DevKit-LiPo @ Olimex](https://www.olimex.com/Products/IoT/ESP32/ESP32-DevKit-LiPo/open-source-hardware)
 
 > **Important: ESP32 Wroon 32U had 38 pins and an UFL connector for an external (high gain and directive) antenna. ESP32 Wroon 32D had 38 pins and a PCB antenna. Choose ESP32 Wroon 32U for a better link margin.**
 
