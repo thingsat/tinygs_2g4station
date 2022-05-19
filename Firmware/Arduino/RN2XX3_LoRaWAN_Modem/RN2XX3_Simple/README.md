@@ -14,3 +14,6 @@ Connect:
 Then register the endpoint with its DevEUI, AppEUi and AppKey on your favorite LoRaWAN Network Server (TTN, Helium, Chirpstack on premise).
 
 ![tinygs2g4-rn2xx3](tinygs2g4-rn2xx3.jpg)
+
+## TODO
+* [ ] add support for region EU433, CN470, US915
