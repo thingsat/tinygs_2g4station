@@ -158,6 +158,7 @@ For Software, check the license into each directory.
 * [ ] TinyGS firmware for ESP32 Wroom 32 + E28 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Wroom 32 + Lambda80 Mikrobus module
 * [ ] TinyGS firmware for ESP32 Wroom 32 + [Miromico FMLR STM SX1280 module](https://miromico.ch/portfolio/fmlr-8x-x-stlx/?lang=en)
+* [ ] TinyGS firmware for ESP32 Wroom 32 + [LR1120 Dev Kit module](https://fr.semtech.com/products/wireless-rf/lora-edge/lr1120dvk1tbks) for such modulations and bands : LoRa SubGHz, LoRa 2.4GHz, LR-FHSS, S-Band (1.9-2.1GHz)
 * [ ] TinyGS firmware for [Wio Terminal](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/) + Lambda80 Mikrobus module
 * [ ] Power consumption study with [X-NUCLEO-LPM01A](https://www.st.com/en/evaluation-tools/x-nucleo-lpm01a.html)
 * [ ] RIOTOS firmware for ESP32 Wroom 32 + Lambda80 module (cubesat emulator)
