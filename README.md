@@ -1,6 +1,6 @@
-# TinyGS :: 2.4 GHz LoRa ground station
+# TinyGS :: 2.4 GHz LoRa (low cost and low tech) ground station
 
-Project to develop a ground station board that will receive messages from satellite on the 2.4GHz band. Satellite tracks are [Thingsat@STORK1](https://tinygs.com/satellite/ThingSat) and other cubeseat followed by the TinyGS community.
+Project to develop a ground station board that will receive messages from satellite on the 2.4GHz band. Satellite tracks are [Thingsat@STORK1](https://tinygs.com/satellite/ThingSat) and other cubeseat followed by the TinyGS community. This station is low cost (off the shelves boards and modules) and low tech (required only a solder iron).
 
 This Git contains Hardware and software of a TinyGS 2.4 GHz LoRa ground station https://tinygs.com/.
 
