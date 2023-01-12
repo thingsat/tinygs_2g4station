@@ -183,5 +183,6 @@ Mounted PCB with Grove boards ([Grove Thumb Joystick](https://wiki.seeedstudio.c
 ![TinyGS 2G4](./images/gateway_tinygs_2g4-c.jpg)
 ![250 PCB for TinyGS 2G4](./images/250_2g4_ground_stations.jpg)
 ![TinyGS 2G4 + RN2483 Mikrobus module (eu433,eu868)](images/tinygs2G4_mikrobus_rn2483.jpg)
+![TinyGS 2G4 + RTK](./images/tinygs2g4-rtk.jpg)
 ![TinyGS 2G4 Mount Party @ IUT1 Grenoble Dept GEII](./images/tinygs2G4_mount_party.jpg)
 
