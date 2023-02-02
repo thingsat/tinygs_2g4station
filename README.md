@@ -173,7 +173,7 @@ For Software, check the license into each directory.
 * [ ] Add pin for IRQ on [GNSS PPS](https://en.wikipedia.org/wiki/Pulse-per-second_signal)
 * [ ] Design Fritzing part for the station
 * [x] add licenses
-* [ ] review PCB designs according the * [Mikrobus specifications v2.0](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf)
+* [ ] review PCB designs according the [Mikrobus specifications v2.0](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf)
 
 
 ## Media
