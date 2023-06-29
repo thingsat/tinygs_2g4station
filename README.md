@@ -174,6 +174,7 @@ For Software, check the license into each directory.
 * [ ] Design Fritzing part for the station
 * [x] add licenses
 * [ ] review PCB designs according the [Mikrobus specifications v2.0](https://download.mikroe.com/documents/standards/mikrobus/mikrobus-standard-specification-v200.pdf)
+* [ ] add L9616 CAN driver footprint ([see](https://copperhilltech.com/blog/can-bus-development-with-esp32wroom32-development-board/)) connected to `CAN_TXD = ESP32 – IO25` and `CAN_RXD = ESP32 – IO26`
 
 
 ## Media
