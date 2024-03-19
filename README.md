@@ -133,7 +133,7 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 
 ### Power Profiling
 * [Nordic Power Profiler Kit II](https://github.com/CampusIoT/tutorial/tree/master/nrf-ppk2#readme)
-> Plug the PPK2 power source (`VOUT`+`GND`) on 3V3+GND pin (double-row header and Grove connectors) and DO NOT plug the ESP32 throught the mini-USB connector.
+> Plug the PPK2 power source (`VOUT`+`GND`) on `3V3`+`GND` pin (double-row header and Grove connectors) and DO NOT plug the ESP32 throught the mini-USB connector.
 ### Misc
 * [SuperAntennaz](https://wiki.satnogs.org/SuperAntennaz)
 
