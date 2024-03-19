@@ -131,6 +131,9 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 * [DFRobot Solar Power Manager Micro](https://www.dfrobot.com/product-1781.html)
 * [Adafruit Universal USB / DC / Solar Lithium Ion/Polymer charger - bq24074](https://learn.adafruit.com/adafruit-bq24074-universal-usb-dc-solar-charger-breakout/design-notes)
 
+### Power Profiling
+* [Nordic Power Profiler Kit II](https://github.com/CampusIoT/tutorial/tree/master/nrf-ppk2#readme)
+> Plug the PPK2 power source (`VOUT`+`GND`) on 3V3+GND pin (double-row header and Grove connectors) and DO NOT plug the ESP32 throught the mini-USB connector.
 ### Misc
 * [SuperAntennaz](https://wiki.satnogs.org/SuperAntennaz)
 
