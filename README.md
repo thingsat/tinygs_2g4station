@@ -49,14 +49,18 @@ A [Power Bank NCR18650B Battery shield](https://www.amazon.com/Diymore-Lithium-B
 
 ##  Mikrobus adapters for SX1280 modules
 
-The design of two Mikrobus adapters for SX1280 modules are currently provided by the project.
+The design of two Mikrobus adapters for SX1280 modules are currently provided by the project:
 
-The pinouts of [Lambda80 SX1280 module adapter](./Mikrobus_Board_Lambda80C/) and the [EByte E28 SX1280 module adapter](./Mikrobus_Board_EbyteE28/) have some differences.
+* [Lambda80 SX1280 module adapter](./Mikrobus_Board_Lambda80C/)
+* [EByte E28 SX1280 module adapter](./Mikrobus_Board_EbyteE28/)
+* [NiceRF_SX1280_TCXO SX1280 module adapter](./Board_Mikrobus_NiceRF_1280_TCXO/)
+
+The pinouts of those adapters have some differences.
 
 > Two versions of the E28 module exists: 12S & 20S
 
 ```
-E28 module
+EByte28 module
 AN  <-> Busy
 INT <-> DIO1
 PWM <-> DIO2
@@ -65,6 +69,11 @@ Lambda80C module
 AN  <-> DIO1
 INT <-> Busy
 PWM <-> DIO2
+
+NiceRF SX1280 TCXO module
+AN  <-> ??
+INT <-> ??
+PWM <-> ??
 ```
 
 ![pinouts differences](./images/Pin_E28-Lambda80C.png)
