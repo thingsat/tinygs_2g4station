@@ -69,9 +69,8 @@ The trace is:
 20:07:44.060 -> 
 20:07:44.096 -> 
 20:07:44.096 -> Transmitter ready
-20:07:44.096 -> 10dBm Packet> Hello World 1234567890*  BytesSent,23  CRC,DAAB  TransmitTime,295mS  PacketsSent,1
-20:07:45.401 -> 10dBm Packet> Hello World 1234567890*  BytesSent,23  CRC,DAAB  TransmitTime,295mS  PacketsSent,2
-20:07:46.730 -> 10dBm Packet> Hello World 1234567890*  BytesSent,23  CRC,DAAB  TransmitTime,295mS  PacketsSent,3
+20:07:44.096 -> 10dBm Packet> fcnt:0,pow:10  BytesSent,13  CRC,E068  TransmitTime,168mS  PacketsSent,1
+20:07:45.401 -> 10dBm Packet> fcnt:1,pow:10  BytesSent,13  CRC,A7BB  TransmitTime,168mS  PacketsSent,2
 ```
 
 Close the console
