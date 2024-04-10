@@ -31,6 +31,12 @@
 #include <SPI.h>                                 //the lora device is SPI based so load the SPI library
 #include <SX128XLT.h>                            //include the appropriate library   
 
+
+#ifndef BALLOON
+#define BALLOON               1
+// #define MULTITECH_ISM2400     1
+#endif
+
 // Define here the S1280 Mikrobus you have plugged on the TinyGS 2G4 station
 
 #define MIKROBUS0_LAMBDA80
@@ -179,7 +185,7 @@ void setup()
   pinMode(LED1, OUTPUT);                        //setup pin as output for indicator LED
   led_Flash(2, 125);                            //two quick LED flashes to indicate program start
 
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println();
   Serial.print(F(__TIME__));
   Serial.print(F(" "));

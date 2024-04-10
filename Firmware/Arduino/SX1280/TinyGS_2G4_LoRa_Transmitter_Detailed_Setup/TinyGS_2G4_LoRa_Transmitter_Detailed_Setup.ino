@@ -17,15 +17,22 @@
   settings (in Settings.h) must be the same for the transmitter and receiver programs. Sample Serial
   Monitor output;
 
-  10dBm Packet> Hello World 1234567890*  BytesSent,23  CRC,DAAB  TransmitTime,64mS  PacketsSent,2
+  10dBm Packet>   BytesSent,23  CRC,DAAB  TransmitTime,64mS  PacketsSent,2
 
-  Serial monitor baud rate is set at 9600
+  Serial monitor baud rate is set at 115200
 *******************************************************************************************************/
 
 #define Program_Version "V1.1"
 
 #include <SPI.h>                                               //the lora device is SPI based so load the SPI library                                         
 #include <SX128XLT.h>                                          //include the appropriate library  
+
+#ifndef BALLOON
+#define BALLOON               1
+// #define MULTITECH_ISM2400     1
+#endif
+
+// Define here the S1280 Mikrobus you have plugged on the TinyGS 2G4 station
 
 #define MIKROBUS0_LAMBDA80
 //#define MIKROBUS0_E28
@@ -39,7 +46,9 @@ SX128XLT LT;                                                   //create a librar
 uint8_t TXPacketL;
 uint32_t TXPacketCount, startmS, endmS;
 
-uint8_t buff[] = "Hello World 1234567890";
+uint8_t buff[256];
+
+uint32_t cpt = 0;
 
 void loop()
 {
@@ -48,8 +57,8 @@ void loop()
   Serial.print(F("Packet> "));
   Serial.flush();
 
-  TXPacketL = sizeof(buff);                                    //set TXPacketL to length of array
-  buff[TXPacketL - 1] = '*';                                   //replace null character at buffer end so its visible on reciver
+  sprintf((char*)buff, "fcnt:%d,pow:%d", cpt++, TXpower);
+  TXPacketL = strlen((char*)buff);
 
   LT.printASCIIPacket(buff, TXPacketL);                        //print the buffer (the sent packet) as ASCII
 
@@ -122,7 +131,7 @@ void setup()
   pinMode(LED1, OUTPUT);                                   //setup pin as output for indicator LED
   led_Flash(2, 125);                                       //two quick LED flashes to indicate program start
 
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println();
   Serial.print(F(__TIME__));
   Serial.print(F(" "));
