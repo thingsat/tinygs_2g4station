@@ -46,8 +46,24 @@ Sync_word = 0x21,
 
 #endif
 
-const int8_t TXpower = 10;                      //LoRa transmit power in dBm
+#ifndef TX_POWER
+#define TX_POWER 10                        // dBm
+#endif
 
-const uint16_t packet_delay = 1000;             //mS delay between packets
+#ifndef PACKET_DELAY
+#define PACKET_DELAY 1000                  // msec.
+#endif
 
-#define RXBUFFER_SIZE 256                        //RX buffer size  
+// TODO change in #define
+const int8_t TXpower = TX_POWER;                      // LoRa transmit power in dBm
+
+// TODO change in #define
+const uint16_t packet_delay = PACKET_DELAY;           // mS delay between packets
+
+#ifndef TXBUFFER_SIZE
+#define TXBUFFER_SIZE 255                        // TX buffer size (LoRa frame maximum size is 255)
+#endif
+
+#ifndef RXBUFFER_SIZE
+#define RXBUFFER_SIZE 255                        // RX buffer size (LoRa frame maximum size is 255)
+#endif

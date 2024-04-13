@@ -65,6 +65,9 @@ PWM <-> DIO2
 
 #endif
 
+
+
+
 #define LED1 2                                  //on board LED, high for on
 
 #define DIO3 -1                                 //DIO3 pin on LoRa device, normally not used so set to -1

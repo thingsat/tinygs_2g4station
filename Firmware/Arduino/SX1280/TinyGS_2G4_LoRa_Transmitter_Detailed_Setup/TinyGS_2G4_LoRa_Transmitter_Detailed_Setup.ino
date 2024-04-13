@@ -39,6 +39,7 @@
 //#define MIKROBUS1_LAMBDA80
 //#define MIKROBUS1_E28
 
+
 #include "Settings.h"                            //include the setiings file, frequencies, LoRa settings etc   
 
 SX128XLT LT;                                                   //create a library class instance called LT
@@ -46,7 +47,7 @@ SX128XLT LT;                                                   //create a librar
 uint8_t TXPacketL;
 uint32_t TXPacketCount, startmS, endmS;
 
-uint8_t buff[256];
+uint8_t buff[TXBUFFER_SIZE];
 
 uint32_t cpt = 0;
 
