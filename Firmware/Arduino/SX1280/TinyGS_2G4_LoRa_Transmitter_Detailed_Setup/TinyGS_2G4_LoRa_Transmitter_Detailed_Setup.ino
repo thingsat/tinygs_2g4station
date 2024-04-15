@@ -25,7 +25,7 @@
 #define Program_Version "V1.1"
 
 #include <SPI.h>                                               //the lora device is SPI based so load the SPI library                                         
-#include <SX128XLT.h>                                          //include the appropriate library  
+#include "SX128XLT_SW.h"                                       //include the appropriate library  
 
 #ifndef BALLOON
 #define BALLOON               1
@@ -39,10 +39,9 @@
 //#define MIKROBUS1_LAMBDA80
 //#define MIKROBUS1_E28
 
-
 #include "Settings.h"                            //include the setiings file, frequencies, LoRa settings etc   
 
-SX128XLT LT;                                                   //create a library class instance called LT
+SX128XLT_SW LT; //create a library class instance called LT
 
 uint8_t TXPacketL;
 uint32_t TXPacketCount, startmS, endmS;
@@ -184,6 +183,7 @@ void setup()
   LT.setMode(MODE_STDBY_RC);
   LT.setRegulatorMode(USE_LDO);
   LT.setPacketType(PACKET_TYPE_LORA);
+  LT.setSyncWord(LORA_MAC_PUBLIC_SYNCWORD);
   LT.setRfFrequency(Frequency, Offset);
   LT.setBufferBaseAddress(0, 0);
   LT.setModulationParams(SpreadingFactor, Bandwidth, CodeRate);
