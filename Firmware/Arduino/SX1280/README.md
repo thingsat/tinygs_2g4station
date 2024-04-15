@@ -155,8 +155,6 @@ Receiver ready - RXBUFFER_SIZE 255
 
 ## Two transmitters
 
-Open the sketch 
-
 Build and download `TinyGS_2G4_LoRa_Transmitter_Detailed_Setup` on a third TinyGS 2G4 station which play the role of transmitter.
 
 Observe the frame collisions between the two boards `44E399A4AE30` and `84156DC63C94`.
@@ -210,9 +208,11 @@ Observe the frame collisions between the two boards `44E399A4AE30` and `84156DC6
 54s  44E399A4AE30;fcnt:62,pow:7,CRC,B38E,RSSI,-33dBm,SNR,7dB,Length,26,Packets,26,Errors,20,IRQreg,8012
 ```
 
-
 ## Exercice
-Add a true random delay into the `TinyGS_2G4_LoRa_Transmitter_Detailed_Setup` at line 
+
+Add a true random delay into the `TinyGS_2G4_LoRa_Transmitter_Detailed_Setup` at line 87: `delay(packet_delay);`
+
+Observe the LoRa frame collisions.
 
 ## TodoList
 * add a frame counter instead of 1234567890
