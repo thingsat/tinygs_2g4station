@@ -215,6 +215,7 @@ Add a true random delay into the `TinyGS_2G4_LoRa_Transmitter_Detailed_Setup` at
 Observe the LoRa frame collisions.
 
 ## TodoList
-* add a frame counter instead of 1234567890
-* Test other examples from https://github.com/StuartsProjects/SX12XX-LoRa/tree/master/examples/SX128x_examples
-* Test SX1280 examples from TinyGS [RadioLib](https://github.com/jgromes/RadioLib/tree/master/examples/SX128x)
+* [x] add a frame counter instead of 1234567890
+* [ ] Test other examples from https://github.com/StuartsProjects/SX12XX-LoRa/tree/master/examples/SX128x_examples
+* [ ] Test SX1280 examples from TinyGS [RadioLib](https://github.com/jgromes/RadioLib/tree/master/examples/SX128x)
+* [ ] Add LoRaWAN-like frame
