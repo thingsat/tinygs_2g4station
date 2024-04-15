@@ -57,6 +57,7 @@ uint8_t RXPacketL;                               //stores length of packet recei
 int8_t  PacketRSSI;                              //stores RSSI of received packet
 int8_t  PacketSNR;                               //stores signal to noise ratio (SNR) of received packet
 
+uint64_t macAddress;
 
 void loop()
 {
@@ -182,6 +183,9 @@ void led_Flash(uint16_t flashes, uint16_t delaymS)
 
 void setup()
 {
+  macAddress = ESP.getEfuseMac();
+  printf("MAC Address: %llX\n", macAddress);
+
   pinMode(LED1, OUTPUT);                        //setup pin as output for indicator LED
   led_Flash(2, 125);                            //two quick LED flashes to indicate program start
 

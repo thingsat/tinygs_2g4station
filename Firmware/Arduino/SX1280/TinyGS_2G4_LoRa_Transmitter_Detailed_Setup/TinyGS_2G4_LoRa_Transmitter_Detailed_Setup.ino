@@ -51,14 +51,20 @@ uint8_t buff[TXBUFFER_SIZE];
 
 uint32_t cpt = 0;
 
+int8_t TXpower = TX_POWER;
+
+uint64_t macAddress;
+
 void loop()
 {
+  TXpower = (TXpower+1) % (TX_POWER + 1);
+
   Serial.print(TXpower);                                       //print the transmit power defined
   Serial.print(F("dBm "));
   Serial.print(F("Packet> "));
   Serial.flush();
 
-  sprintf((char*)buff, "fcnt:%d,pow:%d", cpt++, TXpower);
+  sprintf((char*)buff, "%llX;fcnt:%d,pow:%d", macAddress, cpt++, TXpower);
   TXPacketL = strlen((char*)buff);
 
   LT.printASCIIPacket(buff, TXPacketL);                        //print the buffer (the sent packet) as ASCII
@@ -129,6 +135,9 @@ void led_Flash(uint16_t flashes, uint16_t delaymS)
 
 void setup()
 {
+  macAddress = ESP.getEfuseMac();
+  printf("MAC Address: %llX\n", macAddress);
+
   pinMode(LED1, OUTPUT);                                   //setup pin as output for indicator LED
   led_Flash(2, 125);                                       //two quick LED flashes to indicate program start
 

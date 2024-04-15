@@ -55,9 +55,6 @@ Sync_word = 0x21,
 #endif
 
 // TODO change in #define
-const int8_t TXpower = TX_POWER;                      // LoRa transmit power in dBm
-
-// TODO change in #define
 const uint16_t packet_delay = PACKET_DELAY;           // mS delay between packets
 
 #ifndef TXBUFFER_SIZE
