@@ -195,7 +195,7 @@ void setup()
   Serial.println();
   LT.printDevice();                               //reads and prints the configured LoRa settings, useful check
   Serial.println();
-  LT.printModemSettings();                               //reads and prints the configured LoRa settings, useful check
+  LT.printModemSettingsSW();                               //reads and prints the configured LoRa settings, useful check
   Serial.println();
   LT.printOperatingSettings();                           //reads and prints the configured operating settings, useful check
   Serial.println();

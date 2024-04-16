@@ -29,7 +29,7 @@
 #define Program_Version "V1.0"
 
 #include <SPI.h>                                 //the lora device is SPI based so load the SPI library
-#include <SX128XLT.h>                            //include the appropriate library   
+#include "SX128XLT_SW.h"                            //include the appropriate library   
 
 
 #ifndef BALLOON
@@ -46,7 +46,7 @@
 
 #include "Settings.h"                            //include the setiings file, frequencies, LoRa settings etc   
 
-SX128XLT LT;                                     //create a library class instance called LT
+SX128XLT_SW LT;                                     //create a library class instance called LT
 
 uint32_t RXpacketCount;
 uint32_t errors;
@@ -92,6 +92,17 @@ void loop()
   Serial.println();
 }
 
+static void printf_ba(const uint8_t *ba, size_t len, size_t line_size, const char *line_sep) {
+	for (unsigned int i = 0; i < len; i++) {
+		if (i != 0 && i % line_size == 0) {
+			printf("%s", line_sep);
+		}
+		printf("%02x ", ba[i]);
+	}
+	printf("%s", line_sep);
+}
+
+//static const boolean isASCII = false;
 
 void packet_is_OK()
 {
@@ -103,23 +114,26 @@ void packet_is_OK()
 
   printElapsedTime();                             //print elapsed time to Serial Monitor
   Serial.print(F("  "));
-  LT.printASCIIPacket(RXBUFFER, RXPacketL);       //print the packet as ASCII characters
 
   localCRC = LT.CRCCCITT(RXBUFFER, RXPacketL, 0xFFFF);  //calculate the CRC, this is the external CRC calculation of the RXBUFFER
-  Serial.print(F(",CRC,"));                       //contents, not the LoRa device internal CRC
+  Serial.print(F("CRC="));                       //contents, not the LoRa device internal CRC
   Serial.print(localCRC, HEX);
-  Serial.print(F(",RSSI,"));
+  Serial.print(F(",RSSI="));
   Serial.print(PacketRSSI);
-  Serial.print(F("dBm,SNR,"));
+  Serial.print(F("dBm,SNR="));
   Serial.print(PacketSNR);
-  Serial.print(F("dB,Length,"));
+  Serial.print(F("dB,Length="));
   Serial.print(RXPacketL);
-  Serial.print(F(",Packets,"));
+  Serial.print(F(",Packets="));
   Serial.print(RXpacketCount);
-  Serial.print(F(",Errors,"));
+  Serial.print(F(",Errors="));
   Serial.print(errors);
-  Serial.print(F(",IRQreg,"));
+  Serial.print(F(",IRQreg="));
   Serial.print(IRQStatus, HEX);
+  Serial.println();
+  LT.printASCIIPacket(RXBUFFER, RXPacketL);       //print the packet as ASCII characters
+  Serial.println();
+  printf_ba(RXBUFFER, RXPacketL, 16, "\n");
 }
 
 
@@ -240,6 +254,7 @@ void setup()
   LT.setMode(MODE_STDBY_RC);
   LT.setRegulatorMode(USE_LDO);
   LT.setPacketType(PACKET_TYPE_LORA);
+  LT.setSyncWord(LORA_MAC_PUBLIC_SYNCWORD);
   LT.setRfFrequency(Frequency, Offset);
   LT.setBufferBaseAddress(0, 0);
   LT.setModulationParams(SpreadingFactor, Bandwidth, CodeRate);
@@ -249,7 +264,7 @@ void setup()
 
 
   Serial.println();
-  LT.printModemSettings();                                     //reads and prints the configured LoRa settings, useful check
+  LT.printModemSettingsSW();                                     //reads and prints the configured LoRa settings, useful check
   Serial.println();
   LT.printOperatingSettings();                                 //reads and prints the configured operting settings, useful check
   Serial.println();
