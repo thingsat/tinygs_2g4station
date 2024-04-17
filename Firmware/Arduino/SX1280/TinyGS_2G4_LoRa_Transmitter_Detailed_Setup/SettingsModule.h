@@ -5,6 +5,38 @@
   suitable for the intended purpose and free from errors.
 *******************************************************************************************************/
 
+#ifdef ARDUINO_MIKROBUS0_LAMBDA80
+
+// For https://www.mikroe.com/arduino-uno-click-shield
+
+#define NSS       10                                   //select pin on LoRa device
+#define SCK       13                                  //SCK on SPI3
+#define MISO      12                                 //MISO on SPI3 
+#define MOSI      11                                  //MOSI on SPI3 
+
+#define AN_0      A0
+#define RESET_0   A3
+#define PWM_0     D6
+#define INT_0     D2
+
+#define LED1 LED_GREEN                                  //on board LED, high for on
+
+
+/*
+Lambda80C module
+AN  <-> DIO1
+INT <-> Busy
+PWM <-> DIO2
+*/
+#define DIO1  AN_0                                //DIO1 pin on LoRa device, used for RX and TX done 
+//#define DIO2  PWM_0                               //DIO2 pin on LoRa device, normally not used so set to -1 
+#define DIO2  -1                                //DIO2 pin on LoRa device, normally not used so set to -1 
+#define RFBUSY  INT_0                               //busy line
+#define NRESET  RESET_0                     //reset pin on LoRa device
+
+
+#else
+
 #ifndef MIKROBUS0_LAMBDA80
 #define MIKROBUS0_LAMBDA80    1
 #endif
@@ -65,10 +97,10 @@ PWM <-> DIO2
 
 #endif
 
-
-
-
 #define LED1 2                                  //on board LED, high for on
+
+
+#endif
 
 #define DIO3 -1                                 //DIO3 pin on LoRa device, normally not used so set to -1
 #define RX_EN -1                                //pin for RX enable, used on some SX128X devices, set to -1 if not used

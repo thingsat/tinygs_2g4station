@@ -34,6 +34,7 @@
 
 // Define here the S1280 Mikrobus you have plugged on the TinyGS 2G4 station
 
+// #define ARDUINO_MIKROBUS0_LAMBDA80  1
 #define MIKROBUS0_LAMBDA80
 //#define MIKROBUS0_E28
 //#define MIKROBUS1_LAMBDA80
@@ -52,7 +53,7 @@ uint32_t cpt = 0;
 
 int8_t TXpower = TX_POWER;
 
-uint64_t macAddress;
+uint64_t devEUI;
 
 void loop()
 {
@@ -63,7 +64,7 @@ void loop()
   Serial.print(F("Packet> "));
   Serial.flush();
 
-  sprintf((char*)buff, "%llX;fcnt:%d,pow:%d", macAddress, cpt++, TXpower);
+  sprintf((char*)buff, "%llX;fcnt:%d,pow:%d", devEUI, cpt++, TXpower);
   TXPacketL = strlen((char*)buff);
 
   LT.printASCIIPacket(buff, TXPacketL);                        //print the buffer (the sent packet) as ASCII
@@ -134,8 +135,12 @@ void led_Flash(uint16_t flashes, uint16_t delaymS)
 
 void setup()
 {
-  macAddress = ESP.getEfuseMac();
-  printf("MAC Address: %llX\n", macAddress);
+#ifdef ARDUINO_ARCH_ESP32  
+  devEUI = ESP.getEfuseMac();
+  printf("DevEUI: %llX\n", devEUI);
+#else
+  devEUI = 0x0102030405060708;
+#endif
 
   pinMode(LED1, OUTPUT);                                   //setup pin as output for indicator LED
   led_Flash(2, 125);                                       //two quick LED flashes to indicate program start
