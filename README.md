@@ -147,8 +147,9 @@ Those gateways had 3 LoRa® 2.4GHz channels for Rx and 1 LoRa® 2.4GHz channels 
 ### Debbuging
 * [ ] [Click Analyzer](https://www.mikroe.com/click-analyzer)
 
-### Misc
+## 2.4 GHz antennas
 * [SuperAntennaz](https://wiki.satnogs.org/SuperAntennaz)
+* [DIY Quadrifilar Helix Antenna for 2450 MHz](https://www.thingiverse.com/thing:634205)
 
 ## Licenses
 
