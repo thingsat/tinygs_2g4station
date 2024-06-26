@@ -38,12 +38,12 @@
 #endif
 
 // Define here the S1280 Mikrobus you have plugged on the TinyGS 2G4 station
-
-// #define ARDUINO_MIKROBUS0_LAMBDA80  1
 #define MIKROBUS0_LAMBDA80
-//#define MIKROBUS0_E28
 //#define MIKROBUS1_LAMBDA80
+//#define MIKROBUS0_E28
 //#define MIKROBUS1_E28
+//#define MIKROBUS0_NICERF
+//#define MIKROBUS1_NICERF
 
 #include "Settings.h"                            //include the setiings file, frequencies, LoRa settings etc   
 
