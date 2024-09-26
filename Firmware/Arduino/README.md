@@ -14,6 +14,13 @@ Set the serial console to `115200 8N1`.
 
 ## Examples
 
+### Wifi
+
+* In `Examples` > `Wifi > WifiScan`
+* In `Examples` > `ESP32 > GetMacAddress`
+* In `Examples` > `ESP32 > GetChipID`
+
+
 ### LoRa SX1280
 
 * [SX1280](./SX1280) for StuartsProjects - SX12XX
@@ -39,6 +46,7 @@ Seeedstudio proposes other boards with [various accelerometers](https://wiki.see
 * [ArduinoP13 TLE](https://github.com/TNeutron/ArduinoP13)
 * [JSON](https://arduinojson.org/)
 * [Sat Tracker](https://github.com/alexchang0229/SatelliteTracker)
+* In `Examples`, `TFLite Micro > hello_world`
 
 ## Arduino external libraries
 
