@@ -16,6 +16,7 @@ Follow the [tutorial](https://github.com/CampusIoT/tutorial/tree/master/nrf-ppk2
 | `GND` | `GND`|
 | `D0`  | `D0` |
 
+![](setup.png)
 
 ## References
 
