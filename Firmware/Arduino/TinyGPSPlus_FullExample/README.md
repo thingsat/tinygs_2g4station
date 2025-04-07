@@ -74,3 +74,4 @@ Sats HDOP  Latitude   Longitude   Fix  Date       Time     Date Alt    Course Sp
 
 
 ![Grove GPS on the TinyGS 2G4 station](Grove_GPS.jpg) 
+![Mikrobus GPS on the TinyGS 2G4 station](esp32+xa1110-mikrobus.jpg) 
