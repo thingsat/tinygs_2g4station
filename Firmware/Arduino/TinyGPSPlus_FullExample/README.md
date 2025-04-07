@@ -37,11 +37,21 @@ static const uint32_t GPSBaud = 9600;
 ...
 ```
 
+
+
 > For debugging baudrate, you can display the raw NMEA sentences by setting `DISPLAY_NMEA0183_SENTENCES` to `1` into the sketch.
 
 ```c
 ...
 #define DISPLAY_NMEA0183_SENTENCES    1
+...
+```
+
+> For removing the GNSS data baudrate, set `DISPLAY_GNSS_LINES` to `0` into the sketch.
+
+```c
+...
+#define DISPLAY_GNSS_LINES    0
 ...
 ```
 

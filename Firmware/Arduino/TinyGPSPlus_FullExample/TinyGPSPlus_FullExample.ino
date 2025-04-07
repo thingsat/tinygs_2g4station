@@ -6,14 +6,21 @@
    4800-baud serial GPS device hooked up on pins 4(rx) and 3(tx).
 */
 
-// RXTX for the UART Grove connector or Mikrobus 1
+// RXTX for the UART Grove connector or Mikrobus 1 on TinyGS 2G4 ESP32 board
 static const int RXPin = 17, TXPin = 16;
 
 // XA1110 https://learn.sparkfun.com/tutorials/sparkfun-gps-breakout---xa1110-qwiic-hookup-guide/all
 static const uint32_t GPSBaud = 9600;
 
+// POI (Point of Interest) : CSUG
+static const double POI_LAT = 45.19262400425433, POI_LON = 5.759966075632675;
+
 // set DISPLAY_NMEA0183_SENTENCES to 1 for displaying the NMEA0183 sentences
 #define DISPLAY_NMEA0183_SENTENCES    0
+
+// set DISPLAY_GNSS_LINES to 1 for displaying the GNSS data
+#define DISPLAY_GNSS_LINES            1
+
 
 // The TinyGPS++ object
 TinyGPSPlus gps;
@@ -31,15 +38,17 @@ void setup()
   Serial.print(F("Testing TinyGPS++ library v. ")); Serial.println(TinyGPSPlus::libraryVersion());
   Serial.println(F("by Mikal Hart"));
   Serial.println();
+#if DISPLAY_GNSS_LINES == 1
   Serial.println(F("Sats HDOP  Latitude   Longitude   Fix  Date       Time     Date Alt    Course Speed Card  Distance Course Card  Chars Sentences Checksum"));
-  Serial.println(F("           (deg)      (deg)       Age                      Age  (m)    --- from GPS ----  ----  to CSUG   ----  RX    RX        Fail"));
+  Serial.println(F("           (deg)      (deg)       Age                      Age  (m)    --- from GPS ----  ----  to POI    ----  RX    RX        Fail"));
   Serial.println(F("----------------------------------------------------------------------------------------------------------------------------------------"));
+#endif
 }
 
 void loop()
 {
-  static const double CSUG_LAT = 45.19262400425433, CSUG_LON = 5.759966075632675;
 
+#if DISPLAY_GNSS_LINES == 1
   printInt(gps.satellites.value(), gps.satellites.isValid(), 5);
   printFloat(gps.hdop.hdop(), gps.hdop.isValid(), 6, 1);
   printFloat(gps.location.lat(), gps.location.isValid(), 11, 6);
@@ -55,28 +64,28 @@ void loop()
     (unsigned long)TinyGPSPlus::distanceBetween(
       gps.location.lat(),
       gps.location.lng(),
-      CSUG_LAT, 
-      CSUG_LON) / 1000;
+      POI_LAT, 
+      POI_LON) / 1000;
   printInt(distanceKmToCSUG, gps.location.isValid(), 9);
 
-  double courseToCSUG =
+  double courseToPOI =
     TinyGPSPlus::courseTo(
       gps.location.lat(),
       gps.location.lng(),
-      CSUG_LAT, 
-      CSUG_LON);
+      POI_LAT, 
+      POI_LON);
 
-  printFloat(courseToCSUG, gps.location.isValid(), 7, 2);
+  printFloat(courseToPOI, gps.location.isValid(), 7, 2);
 
-  const char *cardinalToCSUG = TinyGPSPlus::cardinal(courseToCSUG);
+  const char *cardinalToPOI = TinyGPSPlus::cardinal(courseToPOI);
 
-  printStr(gps.location.isValid() ? cardinalToCSUG : "*** ", 6);
+  printStr(gps.location.isValid() ? cardinalToPOI : "*** ", 6);
 
   printInt(gps.charsProcessed(), true, 6);
   printInt(gps.sentencesWithFix(), true, 10);
   printInt(gps.failedChecksum(), true, 9);
   Serial.println();
-  
+#endif  
   smartDelay(1000);
 
   if (millis() > 5000 && gps.charsProcessed() < 10)
@@ -95,8 +104,9 @@ static void smartDelay(unsigned long ms)
 #if DISPLAY_NMEA0183_SENTENCES == 1
             Serial.print(inChar);
 #endif
-            gps.encode(inChar);
-            
+#if DISPLAY_GNSS_LINES == 1
+            gps.encode(inChar);            
+#endif
     }
   } while (millis() - start < ms);
 }
