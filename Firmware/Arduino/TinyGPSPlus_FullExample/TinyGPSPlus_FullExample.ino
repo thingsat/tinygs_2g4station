@@ -6,8 +6,10 @@
    4800-baud serial GPS device hooked up on pins 4(rx) and 3(tx).
 */
 
-// RXTX for the UART Grove connector
-static const int RXPin = 16, TXPin = 17;
+// RXTX for the UART Grove connector or Mikrobus 1
+static const int RXPin = 17, TXPin = 16;
+
+// XA1110 https://learn.sparkfun.com/tutorials/sparkfun-gps-breakout---xa1110-qwiic-hookup-guide/all
 static const uint32_t GPSBaud = 9600;
 
 // set DISPLAY_NMEA0183_SENTENCES to 1 for displaying the NMEA0183 sentences
