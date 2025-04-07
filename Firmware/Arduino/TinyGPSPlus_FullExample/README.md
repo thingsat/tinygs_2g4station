@@ -37,7 +37,13 @@ static const uint32_t GPSBaud = 9600;
 ...
 ```
 
+Set the coordinates of your POI (Point of Interest)
 
+```c
+...
+static const double POI_LAT = 45.19262400425433, POI_LON = 5.759966075632675;
+...
+```
 
 > For debugging baudrate, you can display the raw NMEA sentences by setting `DISPLAY_NMEA0183_SENTENCES` to `1` into the sketch.
 
