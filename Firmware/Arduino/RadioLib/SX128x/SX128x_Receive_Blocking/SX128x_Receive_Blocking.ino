@@ -42,8 +42,16 @@ SX1280 radio = new Module(NSS, DIO1, NRESET, RFBUSY);
 Radio radio = new RadioModule();
 */
 
+static uint64_t chipid;
+static char ssid[14];
+
 void setup() {
   Serial.begin(115200);
+
+  chipid = ESP.getEfuseMac(); //The chip ID is essentially its MAC address(length: 6 bytes).
+  snprintf(ssid, 14, "%llX", chipid);
+  Serial.println(ssid);
+
   Serial.print(F("[RadioLib > SX1280] Receive Blocking "));
 
   // initialize SX1280 with default settings

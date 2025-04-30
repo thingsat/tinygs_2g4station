@@ -37,13 +37,23 @@ SX1280 radio = new Module(NSS, DIO1, NRESET, RFBUSY);
 Radio radio = new RadioModule();
 */
 
+static uint64_t chipid;
+static char ssid[14];
+
 void setup() {
   Serial.begin(115200);
 
-  // initialize SX1280 with default settings
-  Serial.print(F("[RadioLib SX1280] Initializing ... "));
+  chipid = ESP.getEfuseMac(); //The chip ID is essentially its MAC address(length: 6 bytes)
+  snprintf(ssid, 14, "%llX", chipid);
+  Serial.println(ssid);
 
-  // Use default modulation parameters 
+  Serial.print(F("[RadioLib > SX1280] Transmit Blocking "));
+
+  // initialize SX1280 with default settings
+  Serial.print(F("[SX1280] Initializing ... "));
+
+  // Use default modulation parameters
+
   int state =  radio.begin(Frequency, Bandwidth, SpreadingFactor, CodeRate, SyncWord, TxPower, PreambleLenInSymb);
 
   if (state == RADIOLIB_ERR_NONE) {
@@ -73,7 +83,7 @@ void loop() {
  
   // you can transmit C-string or Arduino string up to
   // 256 characters long
-  String str = "Hello World! #" + String(count++);
+  String str = String(ssid) + "> Hello World! #" + String(count++);
 
   Serial.print(str);
   Serial.print("` ... ");

@@ -7,6 +7,15 @@
 
 //*******  Setup LoRa Parameters Here ! ***************
 
+// https://github.com/chirpstack/chirpstack/blob/master/chirpstack/configuration/region_ism2400.toml
+#define CHIRPSTACK_ISM2400_CHANNEL_1       2403.000000
+#define CHIRPSTACK_ISM2400_CHANNEL_2       2479.000000
+#define CHIRPSTACK_ISM2400_CHANNEL_3       2425.000000
+#define CHIRPSTACK_ISM2400_CHANNEL_RX2     2423.000000
+#define CHIRPSTACK_ISM2400_BANDWITH        812.50
+#define CHIRPSTACK_ISM2400_SF              12
+
+
 #define MULTITECH_ISM2400_CHANNEL_1       2422.000000
 #define MULTITECH_ISM2400_CHANNEL_2       2425.000000
 #define MULTITECH_ISM2400_CHANNEL_3       2479.000000
@@ -49,18 +58,19 @@ Sync_word = 0x21,
 #define TxPower                   10                                        // dBm
 #define SyncWord                  RADIOLIB_SX128X_SYNC_WORD_PRIVATE
 
+
 #else
 
 // defines in     RadioLib/src/modules/SX128x/SX128x.h
 
-#define Frequency             2400.00                               //frequency of transmissions
-#define Offset                0                                        //offset frequency for calibration purposes  
-#define Bandwidth             812.5         //LoRa bandwidth
-#define SpreadingFactor       9             //LoRa spreading factor
+#define Frequency             CHIRPSTACK_ISM2400_CHANNEL_1                //frequency of transmissions
+#define Offset                0                                           //offset frequency for calibration purposes  
+#define Bandwidth             CHIRPSTACK_ISM2400_BANDWITH                 //LoRa bandwidth
+#define SpreadingFactor       CHIRPSTACK_ISM2400_SF                       //LoRa spreading factor
 #define CodeRate              7             //LoRa coding rate
 #define PreambleLenInSymb     (12)                                     //Preamble length
 #define TxPower               10                                        // dBm
-#define SyncWord              0x12
+#define SyncWord              0x34
 
 #endif
 
