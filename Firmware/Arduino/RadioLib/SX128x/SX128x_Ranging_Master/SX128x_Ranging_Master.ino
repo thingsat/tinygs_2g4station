@@ -18,6 +18,7 @@
   https://jgromes.github.io/RadioLib/
 */
 
+#include "RLDebug.h"
 // include the library
 #include <RadioLib.h>
 
@@ -43,6 +44,9 @@ void setup() {
   chipid = ESP.getEfuseMac(); //The chip ID is essentially its MAC address(length: 6 bytes).
   snprintf(ssid, 14, "%llX", chipid);
   Serial.println(ssid);
+
+  //Serial.println(RADIOLIB_PLATFORM);
+  Serial.println(RADIOLIB_INFO);
 
   Serial.print(F("[RadioLib > SX1280] Ranging "));
 
