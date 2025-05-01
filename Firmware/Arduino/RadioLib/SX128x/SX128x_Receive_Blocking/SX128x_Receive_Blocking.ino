@@ -90,7 +90,6 @@ void setup() {
   _showInfo();
 
   _initRadio();
-
 }
 
 void loop() {
