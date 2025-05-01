@@ -54,7 +54,7 @@ void setup() {
   Serial.print(F("[SX1280] Initializing ... "));
 
   // Use default modulation parameters 
-  int state =  radio.begin(Frequency, Bandwidth, SpreadingFactor, CodeRate, SyncWord, TxPower, PreambleLenInSymb);
+  int state =  radio.begin(Frequency, Bandwidth, 5, CodeRate, SyncWord, TxPower, PreambleLenInSymb);
 
   if (state == RADIOLIB_ERR_NONE) {
     Serial.println(F("success!"));
