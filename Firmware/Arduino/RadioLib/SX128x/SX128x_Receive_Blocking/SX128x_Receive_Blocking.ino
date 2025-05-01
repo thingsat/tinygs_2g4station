@@ -25,6 +25,8 @@
   https://jgromes.github.io/RadioLib/
 */
 
+#include "RLDebug.h"
+
 // include the library
 #include <RadioLib.h>
 
@@ -32,7 +34,6 @@
 #include "Settings.h"
 
 SX1280 radio = new Module(NSS, DIO1, NRESET, RFBUSY);
-
 
 // or detect the pinout automatically using RadioBoards
 // https://github.com/radiolib-org/RadioBoards
@@ -45,19 +46,23 @@ Radio radio = new RadioModule();
 static uint64_t chipid;
 static char ssid[14];
 
-void setup() {
-  Serial.begin(115200);
-
-  chipid = ESP.getEfuseMac(); //The chip ID is essentially its MAC address(length: 6 bytes).
+static void _showInfo(void) {
+  chipid = ESP.getEfuseMac(); //The chip ID is essentially its MAC address(length: 6 bytes)
   snprintf(ssid, 14, "%llX", chipid);
   Serial.println(ssid);
 
-  Serial.print(F("[RadioLib > SX1280] Receive Blocking "));
+  //Serial.println(RADIOLIB_PLATFORM);
+  Serial.println(RADIOLIB_INFO);
 
+  Serial.print(F("[RadioLib > SX1280] Reveive Blocking "));
+}
+
+static void _initRadio(void){
   // initialize SX1280 with default settings
   Serial.print(F("[SX1280] Initializing ... "));
 
-  // Use default modulation parameters 
+  // Use default modulation parameters
+
   int state =  radio.begin(Frequency, Bandwidth, SpreadingFactor, CodeRate, SyncWord, TxPower, PreambleLenInSymb);
 
   if (state == RADIOLIB_ERR_NONE) {
@@ -67,6 +72,25 @@ void setup() {
     Serial.println(state);
     while (true) { delay(10); }
   }
+
+  // some modules have an external RF switch
+  // controlled via two pins (RX enable, TX enable)
+  // to enable automatic control of the switch,
+  // call the following method
+  // RX enable:   4
+  // TX enable:   5
+  /*
+    radio.setRfSwitchPins(4, 5);
+  */
+}
+
+void setup() {
+  Serial.begin(9600); // 9600 is compliant with Openlog breakout
+
+  _showInfo();
+
+  _initRadio();
+
 }
 
 void loop() {
@@ -85,6 +109,10 @@ void loop() {
   if (state == RADIOLIB_ERR_NONE) {
     // packet was successfully received
     Serial.println(F("success!"));
+
+    // print the data of the packet
+    Serial.print(F("[SX1280] Receiver:\t"));
+    Serial.println(ssid);
 
     // print the data of the packet
     Serial.print(F("[SX1280] Data:\t\t"));
